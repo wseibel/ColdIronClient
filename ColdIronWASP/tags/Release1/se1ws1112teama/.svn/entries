@@ -1,0 +1,126 @@
+10
+
+dir
+756
+svn+ssh://s_a8wunm@scm.gforge.cs.uni-kassel.de/var/lib/gforge/chroot/scmrepos/svn/se1ws1112teama/ColdIronWASP/tags/Release1/se1ws1112teama
+svn+ssh://s_a8wunm@scm.gforge.cs.uni-kassel.de/var/lib/gforge/chroot/scmrepos/svn/se1ws1112teama
+
+
+
+2011-12-12T10:16:42.470528Z
+248
+jbeneke
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+765d9e18-2c09-460f-a6b5-3381d824d4a8
+
+.settings
+dir
+
+ColdIron.uml
+file
+
+
+
+
+2012-03-18T10:42:46.611000Z
+2fbdb376165348126fe67bc6eafb2097
+2011-12-12T10:16:42.470528Z
+248
+jbeneke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64689
+
+ColdIron.umlcd
+file
+
+
+
+
+2012-03-18T10:45:15.014000Z
+d3b0f09c64b1b024b06ae606077ef911
+2011-12-12T10:16:42.470528Z
+248
+jbeneke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+66925
+
+bin
+dir
+
+branches
+dir
+
+doc
+dir
+
+lib
+dir
+
+log
+dir
+
+res
+dir
+
+src
+dir
+
+tags
+dir
+
+trunk
+dir
+

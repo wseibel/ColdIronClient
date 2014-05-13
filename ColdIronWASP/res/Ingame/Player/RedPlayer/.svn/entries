@@ -1,0 +1,34 @@
+10
+
+dir
+756
+svn+ssh://s_a8wunm@scm.gforge.cs.uni-kassel.de/var/lib/gforge/chroot/scmrepos/svn/se1ws1112teama/ColdIronWASP/res/Ingame/Player/RedPlayer
+svn+ssh://s_a8wunm@scm.gforge.cs.uni-kassel.de/var/lib/gforge/chroot/scmrepos/svn/se1ws1112teama
+
+
+
+2012-01-24T20:21:53.860895Z
+382
+sergej
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+765d9e18-2c09-460f-a6b5-3381d824d4a8
+
+buildings
+dir
+
+units
+dir
+

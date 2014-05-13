@@ -1,0 +1,18 @@
+Game game = ciClient.getGame();
+User currentUser;
+for (Iterator<User> userIter = game.iteratorOfUser(); userIter.hasNext();) {
+			User user = userIter.next();
+			if (user.getCurrentPlayer()) {
+				currentUser = (User) user;
+			}
+		}
+
+UserAssets currentUserAssets = currentUser.getUserAssets();
+
+int amountWood = 0;
+for (Iterator<Resources> resourcesIter = userAssets.iteratorOfResources(); resourcesIter.hasNext();) {
+			Resource resource = resourcesIter.next();
+			if (resource.getType().equals("WOOD") {
+				amountWood += resource.getQuantity();
+			}
+		}

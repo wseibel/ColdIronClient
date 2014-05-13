@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/0.9.0" xmi:id="_wlh6hRaHEeGIUYJHma8_tg">
+  <modelElement href="ColdIron.uml#_wsrEUxaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_7T42cBaOEeGIUYJHma8_tg" sourceAnchor="164.0,99.0" targetAnchor="76.0,0.0" source="_5yYEkBaHEeGIUYJHma8_tg" target="_D_Vn0BaIEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_7Tl7gBaOEeGIUYJHma8_tg"/>
+    <visualProperties xmi:id="_7T42cRaOEeGIUYJHma8_tg"/>
+    <nameVisual xmi:id="_7T42chaOEeGIUYJHma8_tg" text="">
+      <visualProperties xmi:id="_7XdH0haOEeGIUYJHma8_tg" position="-18.0,-7.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_7T42cxaOEeGIUYJHma8_tg" name="nonJSONMessageReceiver" navigable="true">
+      <modelElement href="ColdIron.uml#_7Tl7gRaOEeGIUYJHma8_tg"/>
+      <visualProperties xmi:id="_7XdH0RaOEeGIUYJHma8_tg" position="2.0,29.0"/>
+      <visibility xmi:id="_7T42dBaOEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_7T42dRaOEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_7T42dhaOEeGIUYJHma8_tg" name="cIClient" navigable="true">
+      <modelElement href="ColdIron.uml#_7TvFcRaOEeGIUYJHma8_tg"/>
+      <visualProperties xmi:id="_7XdH0xaOEeGIUYJHma8_tg" position="-57.0,-92.0"/>
+      <visibility xmi:id="_7T42dxaOEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_7T42eBaOEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OGbIYRaPEeGIUYJHma8_tg" sourceAnchor="153.0,90.0" targetAnchor="0.0,345.0" source="_D_Vn0BaIEeGIUYJHma8_tg" target="_5y96dRaHEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_OGRXYBaPEeGIUYJHma8_tg"/>
+    <visualProperties xmi:id="_OGbIYhaPEeGIUYJHma8_tg"/>
+    <nameVisual xmi:id="_OGbIYxaPEeGIUYJHma8_tg" text="">
+      <visualProperties xmi:id="_OJ2P0RaPEeGIUYJHma8_tg" position="0.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_OGbIZBaPEeGIUYJHma8_tg" name="cIClient" navigable="true">
+      <modelElement href="ColdIron.uml#_OGRXYRaPEeGIUYJHma8_tg"/>
+      <visualProperties xmi:id="_OJ2P0BaPEeGIUYJHma8_tg" position="49.0,2.0"/>
+      <visibility xmi:id="_OGbIZRaPEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_OGbIZhaPEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OGbIZxaPEeGIUYJHma8_tg" name="serverConnection" navigable="true">
+      <modelElement href="ColdIron.uml#_OGRXZBaPEeGIUYJHma8_tg"/>
+      <visualProperties xmi:id="_OJ2P0haPEeGIUYJHma8_tg" position="-195.0,-37.0"/>
+      <visibility xmi:id="_OGbIaBaPEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_OGbIaRaPEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_S7pGtxaWEeGIUYJHma8_tg" sourceAnchor="98.0,100.0" targetAnchor="15.0,0.0" source="_N_y3wRaWEeGIUYJHma8_tg" target="_D_Vn0BaIEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_S7pGsBaWEeGIUYJHma8_tg"/>
+    <visualProperties xmi:id="_S7pGuBaWEeGIUYJHma8_tg"/>
+    <nameVisual xmi:id="_S7pGuRaWEeGIUYJHma8_tg" text="">
+      <visualProperties xmi:id="_S_gTAxaWEeGIUYJHma8_tg" position="-18.0,-20.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_S7pGuhaWEeGIUYJHma8_tg" name="jSONMessageReceiver" navigable="true">
+      <modelElement href="ColdIron.uml#_S7pGsRaWEeGIUYJHma8_tg"/>
+      <visualProperties xmi:id="_S_gTAhaWEeGIUYJHma8_tg" position="-134.0,59.0"/>
+      <visibility xmi:id="_S7pGuxaWEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_S7pGvBaWEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_S7pGvRaWEeGIUYJHma8_tg" name="cIClient" navigable="true">
+      <modelElement href="ColdIron.uml#_S7pGtBaWEeGIUYJHma8_tg"/>
+      <visualProperties xmi:id="_S_gTBBaWEeGIUYJHma8_tg" position="2.0,-56.0"/>
+      <stereotypes xmi:id="_SFEOnBaXEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_SFEOlRaXEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_S7pGvhaWEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_S7pGvxaWEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_a3HlQBejEeGfvPEK32Tq6A" sourceAnchor="74.0,0.0" targetAnchor="82.0,54.0" subClass="_nL8CUBeiEeGfvPEK32Tq6A" superClass="_mAzE4BeiEeGfvPEK32Tq6A">
+    <modelElement href="ColdIron.uml#_a3FwEBejEeGfvPEK32Tq6A"/>
+    <visualProperties xmi:id="_a3HlQRejEeGfvPEK32Tq6A"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5P-aEBejEeGfvPEK32Tq6A" sourceAnchor="44.0,0.0" targetAnchor="52.0,54.0" source="_nL8CUBeiEeGfvPEK32Tq6A" target="_mAzE4BeiEeGfvPEK32Tq6A">
+    <modelElement href="ColdIron.uml#_5OAEIBejEeGfvPEK32Tq6A"/>
+    <nameVisual xmi:id="_5P-aERejEeGfvPEK32Tq6A" text="">
+      <visualProperties xmi:id="_-RgaQBejEeGfvPEK32Tq6A" position="2.0,-7.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5P-aEhejEeGfvPEK32Tq6A" name="parent" navigable="true">
+      <modelElement href="ColdIron.uml#_5NCa0BejEeGfvPEK32Tq6A"/>
+      <visualProperties xmi:id="_-RfzMBejEeGfvPEK32Tq6A" position="41.0,-36.0"/>
+      <visibility xmi:id="_5P-aExejEeGfvPEK32Tq6A" label="+"/>
+      <cardinality xmi:id="_5P-aFBejEeGfvPEK32Tq6A" label="0..1" max="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6TRDEBejEeGfvPEK32Tq6A" name="kids" navigable="true">
+      <modelElement href="ColdIron.uml#_3o4gcBejEeGfvPEK32Tq6A"/>
+      <visualProperties xmi:id="_-RgaQRejEeGfvPEK32Tq6A" position="-38.0,17.0"/>
+      <visibility xmi:id="_6TV7kBejEeGfvPEK32Tq6A" label="+"/>
+      <cardinality xmi:id="_6TUGYBejEeGfvPEK32Tq6A" label="*" max="-1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6PNpgBejEeGfvPEK32Tq6A" sourceAnchor="66.0,51.0" targetAnchor="52.0,0.0" source="_bKTccBeiEeGfvPEK32Tq6A" target="_mAzE4BeiEeGfvPEK32Tq6A">
+    <modelElement href="ColdIron.uml#_6OQnQBejEeGfvPEK32Tq6A"/>
+    <nameVisual xmi:id="_6PNpgRejEeGfvPEK32Tq6A" text="">
+      <visualProperties xmi:id="_-RhoYBejEeGfvPEK32Tq6A" position="2.0,-7.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5O9tchejEeGfvPEK32Tq6A" name="modelElementTable" navigable="true">
+      <modelElement href="ColdIron.uml#_5LQ5MBejEeGfvPEK32Tq6A"/>
+      <visualProperties xmi:id="_-RhBUBejEeGfvPEK32Tq6A" position="-122.99999999999999,23.0"/>
+      <visibility xmi:id="_5O9tcxejEeGfvPEK32Tq6A" label="+"/>
+      <cardinality xmi:id="_5O9tdBejEeGfvPEK32Tq6A" label="0..1" max="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6PNphRejEeGfvPEK32Tq6A" name="modelElement" navigable="true">
+      <modelElement href="ColdIron.uml#_6NrYcBejEeGfvPEK32Tq6A"/>
+      <visualProperties xmi:id="_-RhoYRejEeGfvPEK32Tq6A" position="-94.00000000000003,-58.0"/>
+      <visibility xmi:id="_6PNphhejEeGfvPEK32Tq6A" label="+"/>
+      <cardinality xmi:id="_6PNphxejEeGfvPEK32Tq6A" label="0..1" max="1"/>
+      <qualifierHelper xmi:id="_H0Zs0BekEeGfvPEK32Tq6A">
+        <qualifiers xmi:id="_H0dXMBekEeGfvPEK32Tq6A" name="id">
+          <modelElement href="ColdIron.uml#_H0X3oBekEeGfvPEK32Tq6A"/>
+          <visibility xmi:id="_H0dXMRekEeGfvPEK32Tq6A" label="+"/>
+          <cardinality xmi:id="_H0dXMhekEeGfvPEK32Tq6A" label="1" max="1" min="1"/>
+          <type xmi:id="_H0dXMxekEeGfvPEK32Tq6A" name="String">
+            <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </type>
+        </qualifiers>
+      </qualifierHelper>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_-Bb3kBoMEeGUUrt1NMWFOg" sourceAnchor="18.0,92.0" targetAnchor="138.0,0.0" source="_Bemz8RoLEeGUUrt1NMWFOg" target="_D_Vn0BaIEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_-BStoBoMEeGUUrt1NMWFOg"/>
+    <visualProperties xmi:id="_-Bb3kRoMEeGUUrt1NMWFOg"/>
+    <nameVisual xmi:id="_-Bb3khoMEeGUUrt1NMWFOg" text="">
+      <visualProperties xmi:id="_-FTq8RoMEeGUUrt1NMWFOg" position="-18.0,-28.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_-Bb3kxoMEeGUUrt1NMWFOg" name="playerInfo" navigable="true">
+      <modelElement href="ColdIron.uml#_-BStoRoMEeGUUrt1NMWFOg"/>
+      <visualProperties xmi:id="_-FTq8BoMEeGUUrt1NMWFOg" position="2.0,14.0"/>
+      <visibility xmi:id="_-Bb3lBoMEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_-Bb3lRoMEeGUUrt1NMWFOg" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_-Bb3lhoMEeGUUrt1NMWFOg" name="cIClient" navigable="true">
+      <modelElement href="ColdIron.uml#_-BStpBoMEeGUUrt1NMWFOg"/>
+      <visualProperties xmi:id="_-FTq8hoMEeGUUrt1NMWFOg" position="-57.0,-50.0"/>
+      <visibility xmi:id="_-Bb3lxoMEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_-Bb3mBoMEeGUUrt1NMWFOg" label="0..1" max="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_IMxDIBoNEeGUUrt1NMWFOg" sourceAnchor="88.0,168.0" targetAnchor="153.0,60.0" source="_mcbVIRoMEeGUUrt1NMWFOg" target="_D_Vn0BaIEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_IMn5MBoNEeGUUrt1NMWFOg"/>
+    <visualProperties xmi:id="_IMxDIRoNEeGUUrt1NMWFOg"/>
+    <nameVisual xmi:id="_IMxDIhoNEeGUUrt1NMWFOg" text="">
+      <visualProperties xmi:id="_IQ7xcRoNEeGUUrt1NMWFOg" position="-208.5,-17.0"/>
+    </nameVisual>
+    <bendpoints xmi:id="_W1CacBoVEeGxpca4p8NJsg" sourceY="59" targetX="401"/>
+    <sourceRole xmi:id="_IMxDIxoNEeGUUrt1NMWFOg" name="gameInfo" navigable="true">
+      <modelElement href="ColdIron.uml#_IMn5MRoNEeGUUrt1NMWFOg"/>
+      <visualProperties xmi:id="_IQ7xcBoNEeGUUrt1NMWFOg" position="-68.0,8.333333333333314"/>
+      <visibility xmi:id="_IMxDJBoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_IMxDJRoNEeGUUrt1NMWFOg" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_IMxDJhoNEeGUUrt1NMWFOg" name="cIClient" navigable="true">
+      <modelElement href="ColdIron.uml#_IMn5NBoNEeGUUrt1NMWFOg"/>
+      <visualProperties xmi:id="_IQ7xchoNEeGUUrt1NMWFOg" position="1.0,-75.99999999999994"/>
+      <visibility xmi:id="_IMxDJxoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_IMxDKBoNEeGUUrt1NMWFOg" label="0..1" max="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_N6mvsBoNEeGUUrt1NMWFOg" sourceAnchor="71.0,73.0" targetAnchor="153.0,30.0" source="_oLkXgBoMEeGUUrt1NMWFOg" target="_D_Vn0BaIEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_N6c-sBoNEeGUUrt1NMWFOg"/>
+    <visualProperties xmi:id="_N6mvsRoNEeGUUrt1NMWFOg"/>
+    <nameVisual xmi:id="_N6mvshoNEeGUUrt1NMWFOg" text="">
+      <visualProperties xmi:id="_N-LBEBoNEeGUUrt1NMWFOg" position="-130.0,2.0"/>
+    </nameVisual>
+    <bendpoints xmi:id="_W04pcxoVEeGxpca4p8NJsg" sourceY="126" targetX="201"/>
+    <sourceRole xmi:id="_N6mvsxoNEeGUUrt1NMWFOg" name="mapInfo" navigable="true">
+      <modelElement href="ColdIron.uml#_N6c-sRoNEeGUUrt1NMWFOg"/>
+      <visualProperties xmi:id="_N-B3LBoNEeGUUrt1NMWFOg" position="-61.0,50.0"/>
+      <visibility xmi:id="_N6mvtBoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_N6mvtRoNEeGUUrt1NMWFOg" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_N6mvthoNEeGUUrt1NMWFOg" name="cIClient" navigable="true">
+      <modelElement href="ColdIron.uml#_N6c-tBoNEeGUUrt1NMWFOg"/>
+      <visualProperties xmi:id="_N-LBERoNEeGUUrt1NMWFOg" position="73.0,-37.0"/>
+      <visibility xmi:id="_N6mvtxoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_N6mvuBoNEeGUUrt1NMWFOg" label="0..1" max="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_nzcKYBoXEeGxpca4p8NJsg" sourceItem="_nzTAcRoXEeGxpca4p8NJsg" targetItem="_5yYEkBaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_JA0VQhoYEeGxpca4p8NJsg" sourceItem="_JA0VQRoYEeGxpca4p8NJsg" targetItem="_nGisAxaREeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jUey4RqzEeGUKpicZPvj5Q" sourceItem="_jUey4BqzEeGUKpicZPvj5Q" targetItem="_mcbVIRoMEeGUUrt1NMWFOg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jV02sBqzEeGUKpicZPvj5Q" sourceItem="_jVh7wBqzEeGUKpicZPvj5Q" targetItem="_oLkXgBoMEeGUUrt1NMWFOg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jWaskBqzEeGUKpicZPvj5Q" sourceItem="_jWHxoBqzEeGUKpicZPvj5Q" targetItem="_Bemz8RoLEeGUUrt1NMWFOg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYWmQRqzEeGUKpicZPvj5Q" sourceItem="_jYWmQBqzEeGUKpicZPvj5Q" targetItem="_5y96iRaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYWmQxqzEeGUKpicZPvj5Q" sourceItem="_jYWmQhqzEeGUKpicZPvj5Q" targetItem="_N_y3wRaWEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYWmRRqzEeGUKpicZPvj5Q" sourceItem="_jYWmRBqzEeGUKpicZPvj5Q" targetItem="_5y96jxaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYWmRxqzEeGUKpicZPvj5Q" sourceItem="_jYWmRhqzEeGUKpicZPvj5Q" targetItem="_5y96lBaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYWmSRqzEeGUKpicZPvj5Q" sourceItem="_jYWmSBqzEeGUKpicZPvj5Q" targetItem="_5y96mRaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYWmSxqzEeGUKpicZPvj5Q" sourceItem="_jYWmShqzEeGUKpicZPvj5Q" targetItem="_5y96oxaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYgXQRqzEeGUKpicZPvj5Q" sourceItem="_jYgXQBqzEeGUKpicZPvj5Q" targetItem="_5y96qBaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYgXQxqzEeGUKpicZPvj5Q" sourceItem="_jYgXQhqzEeGUKpicZPvj5Q" targetItem="_5y96sRaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYgXRRqzEeGUKpicZPvj5Q" sourceItem="_jYgXRBqzEeGUKpicZPvj5Q" targetItem="_5y96uBaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYgXSRqzEeGUKpicZPvj5Q" sourceItem="_jYgXSBqzEeGUKpicZPvj5Q" targetItem="_5y96yBaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_jYgXSxqzEeGUKpicZPvj5Q" sourceItem="_jYgXShqzEeGUKpicZPvj5Q" targetItem="_5y961RaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="__9a9shq9EeGO26CvV7Du0A" sourceItem="__9a9sRq9EeGO26CvV7Du0A" targetItem="__9a9sxq9EeGO26CvV7Du0A"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_ZUImsB3REeGDGvaAm3JhMg" sourceItem="_ZT1rwB3REeGDGvaAm3JhMg" targetItem="_5y96vxaHEeGIUYJHma8_tg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_vOGosB9HEeGqE9nVrqyy7Q" sourceItem="_vN83tx9HEeGqE9nVrqyy7Q" targetItem="_vOGosR9HEeGqE9nVrqyy7Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_vOZjoR9HEeGqE9nVrqyy7Q" sourceItem="_vOZjoB9HEeGqE9nVrqyy7Q" targetItem="_vOZjoh9HEeGqE9nVrqyy7Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_vOjUoB9HEeGqE9nVrqyy7Q" sourceItem="_vOZjpR9HEeGqE9nVrqyy7Q" targetItem="_vOjUoR9HEeGqE9nVrqyy7Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_vOsekB9HEeGqE9nVrqyy7Q" sourceItem="_vOjUpB9HEeGqE9nVrqyy7Q" targetItem="_vOsekR9HEeGqE9nVrqyy7Q"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_mAzE4BeiEeGfvPEK32Tq6A" name="ModelElement" associationsIn="_5P-aEBejEeGfvPEK32Tq6A _6PNpgBejEeGfvPEK32Tq6A" subclassedBy="_a3HlQBejEeGfvPEK32Tq6A">
+    <modelElement href="ColdIron.uml#_mAx2wBeiEeGfvPEK32Tq6A"/>
+    <visualProperties xmi:id="_mAzr8BeiEeGfvPEK32Tq6A" position="64.0,251.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_mAzr8ReiEeGfvPEK32Tq6A" label="+"/>
+    <attributes xmi:id="__VuFwBeiEeGfvPEK32Tq6A" name="id">
+      <modelElement href="ColdIron.uml#__VsQkBeiEeGfvPEK32Tq6A"/>
+      <visibility xmi:id="__VuFwReiEeGfvPEK32Tq6A" label="+"/>
+      <cardinality xmi:id="__VuFwheiEeGfvPEK32Tq6A" label="1" max="1" min="1"/>
+      <type xmi:id="__VuFwxeiEeGfvPEK32Tq6A" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5TqnQBejEeGfvPEK32Tq6A" name="modelElementTable">
+      <modelElement href="ColdIron.uml#_5LQ5MBejEeGfvPEK32Tq6A"/>
+      <visibility xmi:id="_5TqnQRejEeGfvPEK32Tq6A" label="+"/>
+      <cardinality xmi:id="_5TqnQhejEeGfvPEK32Tq6A" label="0..1" max="1"/>
+      <type xmi:id="_5TqnQxejEeGfvPEK32Tq6A" name="ModelElementTable">
+        <modelElement href="ColdIron.uml#_bKRnQBeiEeGfvPEK32Tq6A"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5TqnRBejEeGfvPEK32Tq6A" name="parent">
+      <modelElement href="ColdIron.uml#_5NCa0BejEeGfvPEK32Tq6A"/>
+      <visibility xmi:id="_5TqnRRejEeGfvPEK32Tq6A" label="+"/>
+      <cardinality xmi:id="_5TqnRhejEeGfvPEK32Tq6A" label="0..1" max="1"/>
+      <type xmi:id="_5TqnRxejEeGfvPEK32Tq6A" name="CompModelElement">
+        <modelElement href="ColdIron.uml#_nL7bQBeiEeGfvPEK32Tq6A"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nL8CUBeiEeGfvPEK32Tq6A" name="CompModelElement" associationsOut="_5P-aEBejEeGfvPEK32Tq6A" generalizations="_a3HlQBejEeGfvPEK32Tq6A">
+    <modelElement href="ColdIron.uml#_nL7bQBeiEeGfvPEK32Tq6A"/>
+    <visualProperties xmi:id="_nL8CUReiEeGfvPEK32Tq6A" position="72.0,390.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_nL8CUheiEeGfvPEK32Tq6A" label="+"/>
+    <attributes xmi:id="_3qBv8BejEeGfvPEK32Tq6A" name="kids">
+      <modelElement href="ColdIron.uml#_3o4gcBejEeGfvPEK32Tq6A"/>
+      <visibility xmi:id="_3qBv8RejEeGfvPEK32Tq6A" label="+"/>
+      <cardinality xmi:id="_3qBv8hejEeGfvPEK32Tq6A" label="*" max="-1"/>
+      <type xmi:id="_3qBv8xejEeGfvPEK32Tq6A" name="ModelElement">
+        <modelElement href="ColdIron.uml#_mAx2wBeiEeGfvPEK32Tq6A"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_bKTccBeiEeGfvPEK32Tq6A" name="ModelElementTable" associationsOut="_6PNpgBejEeGfvPEK32Tq6A">
+    <modelElement href="ColdIron.uml#_bKRnQBeiEeGfvPEK32Tq6A"/>
+    <visualProperties xmi:id="_bKTccReiEeGfvPEK32Tq6A" position="50.0,77.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_bKTccheiEeGfvPEK32Tq6A" label="+"/>
+    <attributes xmi:id="_6RAZQBejEeGfvPEK32Tq6A" name="modelElement">
+      <modelElement href="ColdIron.uml#_6NrYcBejEeGfvPEK32Tq6A"/>
+      <visibility xmi:id="_6RAZQRejEeGfvPEK32Tq6A" label="+"/>
+      <cardinality xmi:id="_6RAZQhejEeGfvPEK32Tq6A" label="0..1" max="1"/>
+      <type xmi:id="_6RAZQxejEeGfvPEK32Tq6A" name="ModelElement">
+        <modelElement href="ColdIron.uml#_mAx2wBeiEeGfvPEK32Tq6A"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_N_y3wRaWEeGIUYJHma8_tg" comments="_jYWmQhqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYWmQxqzEeGUKpicZPvj5Q" name="JSONMessageReceiver" associationsOut="_S7pGtxaWEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_N_y3wBaWEeGIUYJHma8_tg"/>
+    <visualProperties xmi:id="_N_y3whaWEeGIUYJHma8_tg" position="231.0,113.0" size="140.0,100.0"/>
+    <stereotypes xmi:id="_SFEOmxaXEeGIUYJHma8_tg" name="Fujaba">
+      <modelElement href="ColdIron.uml#_SFEOkBaXEeGIUYJHma8_tg"/>
+    </stereotypes>
+    <visibility xmi:id="_N_y3wxaWEeGIUYJHma8_tg" label="+"/>
+    <attributes xmi:id="_S7yQpBaWEeGIUYJHma8_tg" name="cIClient">
+      <modelElement href="ColdIron.uml#_S7pGtBaWEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_vmbU0CGGEeG1Z-UhmBP7bw" name="StyledElement">
+        <modelElement href="ColdIron.uml#_SFEOlRaXEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_S7yQpRaWEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_S7yQphaWEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_S7yQpxaWEeGIUYJHma8_tg" name="CIClient">
+        <modelElement href="ColdIron.uml#_D_Md4BaIEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_PrJtYBzYEeGOX_p3Dkfpwg" name="bufferedReader">
+      <modelElement href="ColdIron.uml#_PqtBcRzYEeGOX_p3Dkfpwg"/>
+      <stereotypes xmi:id="_PrJtYRzYEeGOX_p3Dkfpwg" name="LegacyStyledElement">
+        <modelElement href="ColdIron.uml#_PqtBchzYEeGOX_p3Dkfpwg"/>
+      </stereotypes>
+      <visibility xmi:id="_PrJtYhzYEeGOX_p3Dkfpwg" label="-"/>
+      <cardinality xmi:id="_PrJtYxzYEeGOX_p3Dkfpwg" label="1" max="1" min="1"/>
+      <type xmi:id="_PrJtZBzYEeGOX_p3Dkfpwg" name="BufferedReader">
+        <modelElement href="ColdIron.uml#_wtj1IBaHEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SFEOlxaXEeGIUYJHma8_tg" name="run">
+      <modelElement href="ColdIron.uml#_SFEOkRaXEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_SFEOmBaXEeGIUYJHma8_tg" name="Annotations">
+        <modelElement href="ColdIron.uml#_SFEOkhaXEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SFEOmRaXEeGIUYJHma8_tg" name="LegacyStyledElement">
+        <modelElement href="ColdIron.uml#_SFEOlhaXEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_SFEOmhaXEeGIUYJHma8_tg" label="+"/>
+    </operations>
+    <operations xmi:id="_Pq2LYRzYEeGOX_p3Dkfpwg" name="JSONMessageReceiver">
+      <modelElement href="ColdIron.uml#_PqGkgBzYEeGOX_p3Dkfpwg"/>
+      <keywords xmi:id="_Pq2LYhzYEeGOX_p3Dkfpwg" keyword="create"/>
+      <stereotypes xmi:id="_Pq2LYxzYEeGOX_p3Dkfpwg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_PqtBcBzYEeGOX_p3Dkfpwg"/>
+      </stereotypes>
+      <visibility xmi:id="_Pq2LZBzYEeGOX_p3Dkfpwg" label="+"/>
+      <outParameters xmi:id="_Pq2LZRzYEeGOX_p3Dkfpwg">
+        <modelElement href="ColdIron.uml#_PqGkghzYEeGOX_p3Dkfpwg"/>
+        <type xmi:id="_Pq2LZhzYEeGOX_p3Dkfpwg" name="JSONMessageReceiver">
+          <modelElement href="ColdIron.uml#_N_y3wBaWEeGIUYJHma8_tg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Pq2LZxzYEeGOX_p3Dkfpwg" name="bufferedReader">
+        <modelElement href="ColdIron.uml#_PqGkgRzYEeGOX_p3Dkfpwg"/>
+        <type xmi:id="_Pq2LaBzYEeGOX_p3Dkfpwg" name="BufferedReader">
+          <modelElement href="ColdIron.uml#_wtj1IBaHEeGIUYJHma8_tg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5yYEkBaHEeGIUYJHma8_tg" comments="_nzTAcRoXEeGxpca4p8NJsg" targetConnectionVisual="_nzcKYBoXEeGxpca4p8NJsg" name="NonJSONMessageReceiver" associationsOut="_7T42cBaOEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_wtHJMBaHEeGIUYJHma8_tg"/>
+    <visualProperties xmi:id="_5yYEpBaHEeGIUYJHma8_tg" position="226.0,-32.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_5yYEkRaHEeGIUYJHma8_tg" name="Fujaba">
+      <modelElement href="ColdIron.uml#_wtHJMRaHEeGIUYJHma8_tg"/>
+    </stereotypes>
+    <visibility xmi:id="_5yYEkhaHEeGIUYJHma8_tg" label="+"/>
+    <attributes xmi:id="_5yYEkxaHEeGIUYJHma8_tg" name="bufferedReader">
+      <modelElement href="ColdIron.uml#_wttmMRaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5yYElBaHEeGIUYJHma8_tg" name="LegacyStyledElement">
+        <modelElement href="ColdIron.uml#_wttmMhaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5yYElRaHEeGIUYJHma8_tg" label="-"/>
+      <cardinality xmi:id="_5yYElhaHEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_5yYElxaHEeGIUYJHma8_tg" name="BufferedReader">
+        <modelElement href="ColdIron.uml#_wtj1IBaHEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_7T42fRaOEeGIUYJHma8_tg" name="cIClient">
+      <modelElement href="ColdIron.uml#_7TvFcRaOEeGIUYJHma8_tg"/>
+      <visibility xmi:id="_7T42fhaOEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_7T42fxaOEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_7T42gBaOEeGIUYJHma8_tg" name="CIClient">
+        <modelElement href="ColdIron.uml#_D_Md4BaIEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5yYEmBaHEeGIUYJHma8_tg" name="run">
+      <modelElement href="ColdIron.uml#_wtHJOxaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5yYEmRaHEeGIUYJHma8_tg" name="LegacyStyledElement">
+        <modelElement href="ColdIron.uml#_wtHJPBaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5yYEmhaHEeGIUYJHma8_tg" name="Annotations">
+        <modelElement href="ColdIron.uml#_wtHJPRaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5yYEmxaHEeGIUYJHma8_tg" label="+"/>
+    </operations>
+    <operations xmi:id="_5yYEnBaHEeGIUYJHma8_tg" name="NonJSONMessageReceiver">
+      <modelElement href="ColdIron.uml#_wttmKhaHEeGIUYJHma8_tg"/>
+      <keywords xmi:id="_5yYEnRaHEeGIUYJHma8_tg" keyword="create"/>
+      <stereotypes xmi:id="_5yYEnhaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wttmLxaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5yYEnxaHEeGIUYJHma8_tg" label="+"/>
+      <outParameters xmi:id="_5yYEoBaHEeGIUYJHma8_tg">
+        <modelElement href="ColdIron.uml#_wttmLhaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5yYEoRaHEeGIUYJHma8_tg" name="NonJSONMessageReceiver">
+          <modelElement href="ColdIron.uml#_wtHJMBaHEeGIUYJHma8_tg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5yYEohaHEeGIUYJHma8_tg" name="bufferedReader">
+        <modelElement href="ColdIron.uml#_wttmKxaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5yYEoxaHEeGIUYJHma8_tg" name="BufferedReader">
+          <modelElement href="ColdIron.uml#_wtj1IBaHEeGIUYJHma8_tg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Bemz8RoLEeGUUrt1NMWFOg" comments="_jWHxoBqzEeGUKpicZPvj5Q" targetConnectionVisual="_jWaskBqzEeGUKpicZPvj5Q" name="PlayerInfo" associationsOut="_-Bb3kBoMEeGUUrt1NMWFOg">
+    <modelElement href="ColdIron.uml#_Bemz8BoLEeGUUrt1NMWFOg"/>
+    <visualProperties xmi:id="_Bemz8hoLEeGUUrt1NMWFOg" position="434.0,158.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Bemz8xoLEeGUUrt1NMWFOg" label="+"/>
+    <attributes xmi:id="_-Bb3nRoMEeGUUrt1NMWFOg" name="cIClient">
+      <modelElement href="ColdIron.uml#_-BStpBoMEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_-Bb3nhoMEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_-Bb3nxoMEeGUUrt1NMWFOg" label="0..1" max="1"/>
+      <type xmi:id="_-Bb3oBoMEeGUUrt1NMWFOg" name="CIClient">
+        <modelElement href="ColdIron.uml#_D_Md4BaIEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0OF4wBoNEeGUUrt1NMWFOg" name="name">
+      <modelElement href="ColdIron.uml#_0N8HwBoNEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_0OF4wRoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_0OF4whoNEeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_0OF4wxoNEeGUUrt1NMWFOg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5hcowRoNEeGUUrt1NMWFOg" name="team">
+      <modelElement href="ColdIron.uml#_5hcowBoNEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_5hcowhoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_5hcowxoNEeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_5hcoxBoNEeGUUrt1NMWFOg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_9BDjMBoNEeGUUrt1NMWFOg" name="status">
+      <modelElement href="ColdIron.uml#_9A5yMBoNEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_9BDjMRoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_9BDjMhoNEeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_9BDjMxoNEeGUUrt1NMWFOg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oLkXgBoMEeGUUrt1NMWFOg" comments="_jVh7wBqzEeGUKpicZPvj5Q" targetConnectionVisual="_jV02sBqzEeGUKpicZPvj5Q" name="MapInfo" associationsOut="_N6mvsBoNEeGUUrt1NMWFOg">
+    <modelElement href="ColdIron.uml#_oLamgBoMEeGUUrt1NMWFOg"/>
+    <visualProperties xmi:id="_oLkXgRoMEeGUUrt1NMWFOg" position="597.0,159.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oLkXghoMEeGUUrt1NMWFOg" label="+"/>
+    <attributes xmi:id="_N6v5oBoNEeGUUrt1NMWFOg" name="cIClient">
+      <modelElement href="ColdIron.uml#_N6c-tBoNEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_N6v5oRoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_N6v5ohoNEeGUUrt1NMWFOg" label="0..1" max="1"/>
+      <type xmi:id="_N6v5oxoNEeGUUrt1NMWFOg" name="CIClient">
+        <modelElement href="ColdIron.uml#_D_Md4BaIEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_EhcuURoVEeGxpca4p8NJsg" name="name">
+      <modelElement href="ColdIron.uml#_EhcuUBoVEeGxpca4p8NJsg"/>
+      <visibility xmi:id="_EhcuUhoVEeGxpca4p8NJsg" label="+"/>
+      <cardinality xmi:id="_EhcuUxoVEeGxpca4p8NJsg" label="1" max="1" min="1"/>
+      <type xmi:id="_EhcuVBoVEeGxpca4p8NJsg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HtRKERoVEeGxpca4p8NJsg" name="sectorCount">
+      <modelElement href="ColdIron.uml#_HtRKEBoVEeGxpca4p8NJsg"/>
+      <visibility xmi:id="_HtRKEhoVEeGxpca4p8NJsg" label="+"/>
+      <cardinality xmi:id="_HtRKExoVEeGxpca4p8NJsg" label="1" max="1" min="1"/>
+      <type xmi:id="_HtRKFBoVEeGxpca4p8NJsg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_mcbVIRoMEeGUUrt1NMWFOg" comments="_jUey4BqzEeGUKpicZPvj5Q" targetConnectionVisual="_jUey4RqzEeGUKpicZPvj5Q" name="GameInfo" associationsOut="_IMxDIBoNEeGUUrt1NMWFOg">
+    <modelElement href="ColdIron.uml#_mcbVIBoMEeGUUrt1NMWFOg"/>
+    <visualProperties xmi:id="_mcbVIhoMEeGUUrt1NMWFOg" position="780.0,161.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_mcbVIxoMEeGUUrt1NMWFOg" label="+"/>
+    <attributes xmi:id="_IM60JBoNEeGUUrt1NMWFOg" name="cIClient">
+      <modelElement href="ColdIron.uml#_IMn5NBoNEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_IM60JRoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_IM60JhoNEeGUUrt1NMWFOg" label="0..1" max="1"/>
+      <type xmi:id="_IM60JxoNEeGUUrt1NMWFOg" name="CIClient">
+        <modelElement href="ColdIron.uml#_D_Md4BaIEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L5RCsRoQEeGUUrt1NMWFOg" name="name">
+      <modelElement href="ColdIron.uml#_L5RCsBoQEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_L5RCshoQEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_L5RCsxoQEeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_L5RCtBoQEeGUUrt1NMWFOg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_gdKkkBoQEeGUUrt1NMWFOg" name="eventCount">
+      <modelElement href="ColdIron.uml#_gdAzkBoQEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_gdKkkRoQEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_gdKkkhoQEeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_gdKkkxoQEeGUUrt1NMWFOg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_mgHlgRoQEeGUUrt1NMWFOg" name="mapName">
+      <modelElement href="ColdIron.uml#_mgHlgBoQEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_mgHlghoQEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_mgHlgxoQEeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_mgHlhBoQEeGUUrt1NMWFOg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HcPoUBoREeGUUrt1NMWFOg" name="sectorCount">
+      <modelElement href="ColdIron.uml#_HcF3UBoREeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_HcPoURoREeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_HcPoUhoREeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_HcPoUxoREeGUUrt1NMWFOg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sn1-ERoREeGUUrt1NMWFOg" name="joinedPlayerCount">
+      <modelElement href="ColdIron.uml#_Sn1-EBoREeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_Sn1-EhoREeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_Sn1-ExoREeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_bq3dwBoREeGUUrt1NMWFOg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_fWrBIRoREeGUUrt1NMWFOg" name="maxPlayerCount">
+      <modelElement href="ColdIron.uml#_fWrBIBoREeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_fWrBIhoREeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_fWrBIxoREeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_fWrBJBoREeGUUrt1NMWFOg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CKQp8RoUEeGxpca4p8NJsg" name="status">
+      <modelElement href="ColdIron.uml#_CKQp8BoUEeGxpca4p8NJsg"/>
+      <visibility xmi:id="_CKQp8hoUEeGxpca4p8NJsg" label="+"/>
+      <cardinality xmi:id="_CKQp8xoUEeGxpca4p8NJsg" label="1" max="1" min="1"/>
+      <type xmi:id="_CKQp9BoUEeGxpca4p8NJsg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_nzTAcRoXEeGxpca4p8NJsg" item="_5yYEkBaHEeGIUYJHma8_tg" sourceConnectionVisual="_nzcKYBoXEeGxpca4p8NJsg" text="a thread that is permanently trying to receive clear-text-messages and&#xD;&#xA;passes them for consumption to ServerConnection.consumeMessage() or &#xD;&#xA;is blocking while there is nothing to receive">
+    <modelElement href="ColdIron.uml#_nzTAcBoXEeGxpca4p8NJsg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_JA0VQRoYEeGxpca4p8NJsg" item="_nGisAxaREeGIUYJHma8_tg" sourceConnectionVisual="_JA0VQhoYEeGxpca4p8NJsg" text="evaluates the servers clear-text-messages and feeds the datamodel&#xD;&#xA;&#x9;  * @param msg">
+    <modelElement href="ColdIron.uml#_JA0VQBoYEeGxpca4p8NJsg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jUey4BqzEeGUKpicZPvj5Q" item="_mcbVIRoMEeGUUrt1NMWFOg" sourceConnectionVisual="_jUey4RqzEeGUKpicZPvj5Q" text="stores informations about a game that is currently existing on the server">
+    <modelElement href="ColdIron.uml#_jTTHIBqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jVh7wBqzEeGUKpicZPvj5Q" item="_oLkXgBoMEeGUUrt1NMWFOg" sourceConnectionVisual="_jV02sBqzEeGUKpicZPvj5Q" text="stores informations about a map that is available for creating games&#xD;&#xA;&#x9; * on the server">
+    <modelElement href="ColdIron.uml#_jTTHIhqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jWHxoBqzEeGUKpicZPvj5Q" item="_Bemz8RoLEeGUUrt1NMWFOg" sourceConnectionVisual="_jWaskBqzEeGUKpicZPvj5Q" text="stores informations about a user who was online on the server&#xD;&#xA;&#x9; *  (user might go offline, what wouldn`t be noticed here yet)">
+    <modelElement href="ColdIron.uml#_jTTHIxqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYWmQBqzEeGUKpicZPvj5Q" item="_5y96iRaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYWmQRqzEeGUKpicZPvj5Q" text=" Constructor that is private to enforce the use of public getInstance()">
+    <modelElement href="ColdIron.uml#_jTTHJBqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYWmQhqzEeGUKpicZPvj5Q" item="_N_y3wRaWEeGIUYJHma8_tg" sourceConnectionVisual="_jYWmQxqzEeGUKpicZPvj5Q" text="a thread that is permanently trying to receive JSON-messages and&#xD;&#xA;passes them to their handlers or &#xD;&#xA;is blocking while there is nothing to receive">
+    <modelElement href="ColdIron.uml#_jTTHIRqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYWmRBqzEeGUKpicZPvj5Q" item="_5y96jxaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYWmRRqzEeGUKpicZPvj5Q" text="asks the server for currently online users">
+    <modelElement href="ColdIron.uml#_jTTHJRqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYWmRhqzEeGUKpicZPvj5Q" item="_5y96lBaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYWmRxqzEeGUKpicZPvj5Q" text="asks the server for currently existing games">
+    <modelElement href="ColdIron.uml#_jTTHJhqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYWmSBqzEeGUKpicZPvj5Q" item="_5y96mRaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYWmSRqzEeGUKpicZPvj5Q" text="asks the server for currently available maps">
+    <modelElement href="ColdIron.uml#_jTTHJxqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYWmShqzEeGUKpicZPvj5Q" item="_5y96oxaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYWmSxqzEeGUKpicZPvj5Q" text="sends message as a chat-Message to the server&#xD;&#xA;&#x9;  * @param message">
+    <modelElement href="ColdIron.uml#_jTTHKBqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYgXQBqzEeGUKpicZPvj5Q" item="_5y96qBaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYgXQRqzEeGUKpicZPvj5Q" text="asks the server to change the password from pass1 to pass2&#xD;&#xA;&#x9;  * @param pass1&#xD;&#xA;&#x9;  * @param pass2">
+    <modelElement href="ColdIron.uml#_jTTHKRqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYgXQhqzEeGUKpicZPvj5Q" item="_5y96sRaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYgXQxqzEeGUKpicZPvj5Q" text="join the game with that name&#xD;&#xA;&#x9;  * @param name">
+    <modelElement href="ColdIron.uml#_jTTHKhqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYgXRBqzEeGUKpicZPvj5Q" item="_5y96uBaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYgXRRqzEeGUKpicZPvj5Q" text="create the game with that name&#xD;&#xA;&#x9;  * @param name">
+    <modelElement href="ColdIron.uml#_jTTHKxqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYgXSBqzEeGUKpicZPvj5Q" item="_5y96yBaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYgXSRqzEeGUKpicZPvj5Q" text=" logout the current user, what does result in shutting&#xD;&#xA;&#x9;  *  down the current server-connection (equals facing a timeout)">
+    <modelElement href="ColdIron.uml#_jTTHLRqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_jYgXShqzEeGUKpicZPvj5Q" item="_5y961RaHEeGIUYJHma8_tg" sourceConnectionVisual="_jYgXSxqzEeGUKpicZPvj5Q" text=" tries to connect to the server&#xD;&#xA;&#x9;  *  returns true if managed to do so">
+    <modelElement href="ColdIron.uml#_jTTHLhqzEeGUKpicZPvj5Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="__9a9sRq9EeGO26CvV7Du0A" item="__9a9sxq9EeGO26CvV7Du0A" sourceConnectionVisual="__9a9shq9EeGO26CvV7Du0A" text="send a &quot;noop&quot; to server&#xD;&#xA;&#x9;  * @param name">
+    <modelElement href="ColdIron.uml#__9a9sBq9EeGO26CvV7Du0A"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_ZT1rwB3REeGDGvaAm3JhMg" item="_5y96vxaHEeGIUYJHma8_tg" sourceConnectionVisual="_ZUImsB3REeGDGvaAm3JhMg" text="login as user with that name and that password&#xD;&#xA;&#x9;  * @param name&#xD;&#xA;&#x9;  * @param password&#xD;&#xA;&#x9;  * @param logincontroller">
+    <modelElement href="ColdIron.uml#_ZEzxRx3REeGDGvaAm3JhMg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_D_Vn0BaIEeGIUYJHma8_tg" name="CIClient" associationsIn="_7T42cBaOEeGIUYJHma8_tg _S7pGtxaWEeGIUYJHma8_tg _-Bb3kBoMEeGUUrt1NMWFOg _IMxDIBoNEeGUUrt1NMWFOg _N6mvsBoNEeGUUrt1NMWFOg" associationsOut="_OGbIYRaPEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_D_Md4BaIEeGIUYJHma8_tg"/>
+    <visualProperties xmi:id="_D_Vn0RaIEeGIUYJHma8_tg" position="314.0,328.0" size="153.0,121.0"/>
+    <keywords xmi:id="_Oru1sCAjEeGyab0juoOnBg" keyword="JavaBean"/>
+    <stereotypes xmi:id="_OvafMBaIEeGIUYJHma8_tg" name="Fujaba">
+      <modelElement href="ColdIron.uml#_OvHkQBaIEeGIUYJHma8_tg"/>
+    </stereotypes>
+    <visibility xmi:id="_D_Vn0haIEeGIUYJHma8_tg" label="+"/>
+    <attributes xmi:id="_7T42eRaOEeGIUYJHma8_tg" name="nonJSONMessageReceiver">
+      <modelElement href="ColdIron.uml#_7Tl7gRaOEeGIUYJHma8_tg"/>
+      <visibility xmi:id="_7T42ehaOEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_7T42exaOEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_7T42fBaOEeGIUYJHma8_tg" name="NonJSONMessageReceiver">
+        <modelElement href="ColdIron.uml#_wtHJMBaHEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OGkSVBaPEeGIUYJHma8_tg" name="serverConnection">
+      <modelElement href="ColdIron.uml#_OGRXZBaPEeGIUYJHma8_tg"/>
+      <visibility xmi:id="_OGkSVRaPEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_OGkSVhaPEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_OGkSVxaPEeGIUYJHma8_tg" name="ServerConnection">
+        <modelElement href="ColdIron.uml#_wtHJPxaHEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_S7yQoBaWEeGIUYJHma8_tg" name="jSONMessageReceiver">
+      <modelElement href="ColdIron.uml#_S7pGsRaWEeGIUYJHma8_tg"/>
+      <visibility xmi:id="_S7yQoRaWEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_S7yQohaWEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_S7yQoxaWEeGIUYJHma8_tg" name="JSONMessageReceiver">
+        <modelElement href="ColdIron.uml#_N_y3wBaWEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Um-ocBoKEeGUUrt1NMWFOg" name="newRcvChatMessage">
+      <modelElement href="ColdIron.uml#_Um03cBoKEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_Um-ocRoKEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_Um-ochoKEeGUUrt1NMWFOg" label="1" max="1" min="1"/>
+      <type xmi:id="_Um-ocxoKEeGUUrt1NMWFOg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_-Bb3mRoMEeGUUrt1NMWFOg" name="playerInfo">
+      <modelElement href="ColdIron.uml#_-BStoRoMEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_-Bb3mhoMEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_-Bb3mxoMEeGUUrt1NMWFOg" label="*" max="-1"/>
+      <type xmi:id="_-Bb3nBoMEeGUUrt1NMWFOg" name="PlayerInfo">
+        <modelElement href="ColdIron.uml#_Bemz8BoLEeGUUrt1NMWFOg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IM60IBoNEeGUUrt1NMWFOg" name="gameInfo">
+      <modelElement href="ColdIron.uml#_IMn5MRoNEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_IM60IRoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_IM60IhoNEeGUUrt1NMWFOg" label="*" max="-1"/>
+      <type xmi:id="_IM60IxoNEeGUUrt1NMWFOg" name="GameInfo">
+        <modelElement href="ColdIron.uml#_mcbVIBoMEeGUUrt1NMWFOg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_N6mvuRoNEeGUUrt1NMWFOg" name="mapInfo">
+      <modelElement href="ColdIron.uml#_N6c-sRoNEeGUUrt1NMWFOg"/>
+      <visibility xmi:id="_N6mvuhoNEeGUUrt1NMWFOg" label="+"/>
+      <cardinality xmi:id="_N6mvuxoNEeGUUrt1NMWFOg" label="*" max="-1"/>
+      <type xmi:id="_N6mvvBoNEeGUUrt1NMWFOg" name="MapInfo">
+        <modelElement href="ColdIron.uml#_oLamgBoMEeGUUrt1NMWFOg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_egx7ICGJEeG1Z-UhmBP7bw" name="setNewRcvChatMessage">
+      <modelElement href="ColdIron.uml#_eYIVcCGJEeG1Z-UhmBP7bw"/>
+      <stereotypes xmi:id="_egx7ISGJEeG1Z-UhmBP7bw" name="StyledElement">
+        <modelElement href="ColdIron.uml#_eYSGcSGJEeG1Z-UhmBP7bw"/>
+      </stereotypes>
+      <visibility xmi:id="_egx7IiGJEeG1Z-UhmBP7bw" label="+"/>
+      <parameters xmi:id="_egx7IyGJEeG1Z-UhmBP7bw" name="value">
+        <modelElement href="ColdIron.uml#_eYSGcCGJEeG1Z-UhmBP7bw"/>
+        <type xmi:id="_egx7JCGJEeG1Z-UhmBP7bw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_vN83tx9HEeGqE9nVrqyy7Q" item="_vOGosR9HEeGqE9nVrqyy7Q" sourceConnectionVisual="_vOGosB9HEeGqE9nVrqyy7Q" text="create and start the noop thread">
+    <modelElement href="ColdIron.uml#_vNztxx9HEeGqE9nVrqyy7Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_vOZjoB9HEeGqE9nVrqyy7Q" item="_vOZjoh9HEeGqE9nVrqyy7Q" sourceConnectionVisual="_vOZjoR9HEeGqE9nVrqyy7Q" text="finish the noop thread">
+    <modelElement href="ColdIron.uml#_vNztyB9HEeGqE9nVrqyy7Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_vOZjpR9HEeGqE9nVrqyy7Q" item="_vOjUoR9HEeGqE9nVrqyy7Q" sourceConnectionVisual="_vOjUoB9HEeGqE9nVrqyy7Q" text="create and start the update threads">
+    <modelElement href="ColdIron.uml#_vNztyR9HEeGqE9nVrqyy7Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_vOjUpB9HEeGqE9nVrqyy7Q" item="_vOsekR9HEeGqE9nVrqyy7Q" sourceConnectionVisual="_vOsekB9HEeGqE9nVrqyy7Q" text="finish the update threads">
+    <modelElement href="ColdIron.uml#_vN83sB9HEeGqE9nVrqyy7Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5y96dRaHEeGIUYJHma8_tg" name="ServerConnection" associationsIn="_OGbIYRaPEeGIUYJHma8_tg">
+    <modelElement href="ColdIron.uml#_wtHJPxaHEeGIUYJHma8_tg"/>
+    <visualProperties xmi:id="_5y962haHEeGIUYJHma8_tg" position="1004.0,73.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_5y96dhaHEeGIUYJHma8_tg" name="Fujaba">
+      <modelElement href="ColdIron.uml#_wtHJQBaHEeGIUYJHma8_tg"/>
+    </stereotypes>
+    <visibility xmi:id="_5y96dxaHEeGIUYJHma8_tg" label="+"/>
+    <attributes xmi:id="_5y96eBaHEeGIUYJHma8_tg" name="socket">
+      <modelElement href="ColdIron.uml#_wttmMxaHEeGIUYJHma8_tg"/>
+      <visibility xmi:id="_5y96eRaHEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_5y96ehaHEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_5y96exaHEeGIUYJHma8_tg" name="Socket">
+        <modelElement href="ColdIron.uml#_wtj1LhaHEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5y96fBaHEeGIUYJHma8_tg" name="bufferedWriter">
+      <modelElement href="ColdIron.uml#_wttmNBaHEeGIUYJHma8_tg"/>
+      <visibility xmi:id="_5y96fRaHEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_5y96fhaHEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_5y96fxaHEeGIUYJHma8_tg" name="BufferedWriter">
+        <modelElement href="ColdIron.uml#_wtj1JBaHEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5y96gBaHEeGIUYJHma8_tg" name="bufferedReader">
+      <modelElement href="ColdIron.uml#_wttmNRaHEeGIUYJHma8_tg"/>
+      <visibility xmi:id="_5y96gRaHEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_5y96ghaHEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_5y96gxaHEeGIUYJHma8_tg" name="BufferedReader">
+        <modelElement href="ColdIron.uml#_wtj1IBaHEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OGkSUBaPEeGIUYJHma8_tg" name="cIClient">
+      <modelElement href="ColdIron.uml#_OGRXYRaPEeGIUYJHma8_tg"/>
+      <visibility xmi:id="_OGkSURaPEeGIUYJHma8_tg" label="+"/>
+      <cardinality xmi:id="_OGkSUhaPEeGIUYJHma8_tg" label="1" max="1" min="1"/>
+      <type xmi:id="_OGkSUxaPEeGIUYJHma8_tg" name="CIClient">
+        <modelElement href="ColdIron.uml#_D_Md4BaIEeGIUYJHma8_tg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZM_c4B3REeGDGvaAm3JhMg" defaultValue="new PropertyChangeSupport(this)" name="changes">
+      <modelElement href="ColdIron.uml#_ZEzxQB3REeGDGvaAm3JhMg"/>
+      <stereotypes xmi:id="_ZM_c4R3REeGDGvaAm3JhMg" name="LegacyStyledElement">
+        <modelElement href="ColdIron.uml#_ZEzxQh3REeGDGvaAm3JhMg"/>
+      </stereotypes>
+      <visibility xmi:id="_ZM_c4h3REeGDGvaAm3JhMg" label="-"/>
+      <cardinality xmi:id="_ZM_c4x3REeGDGvaAm3JhMg" label="1" max="1" min="1"/>
+      <type xmi:id="_ZM_c5B3REeGDGvaAm3JhMg" name="PropertyChangeSupport">
+        <modelElement href="ColdIron.uml#_ZEqAQB3REeGDGvaAm3JhMg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_vOselB9HEeGqE9nVrqyy7Q" name="updateTask">
+      <modelElement href="ColdIron.uml#_vNp8wB9HEeGqE9nVrqyy7Q"/>
+      <stereotypes xmi:id="_vOselR9HEeGqE9nVrqyy7Q" name="MultiDeclaration">
+        <modelElement href="ColdIron.uml#_vNp8wR9HEeGqE9nVrqyy7Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_vOselh9HEeGqE9nVrqyy7Q" name="LegacyStyledElement">
+        <modelElement href="ColdIron.uml#_vNp8wh9HEeGqE9nVrqyy7Q"/>
+      </stereotypes>
+      <visibility xmi:id="_vOselx9HEeGqE9nVrqyy7Q" label="-"/>
+      <cardinality xmi:id="_vOsemB9HEeGqE9nVrqyy7Q" label="1" max="1" min="1"/>
+      <type xmi:id="_vOsemR9HEeGqE9nVrqyy7Q" name="Timer">
+        <modelElement href="ColdIron.uml#_vNXB0B9HEeGqE9nVrqyy7Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_i5XsACGJEeG1Z-UhmBP7bw" name="noopTask">
+      <modelElement href="ColdIron.uml#_ivrkgCGJEeG1Z-UhmBP7bw"/>
+      <stereotypes xmi:id="_i5XsASGJEeG1Z-UhmBP7bw" name="MultiDeclaration">
+        <modelElement href="ColdIron.uml#_ivrkgSGJEeG1Z-UhmBP7bw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_i5XsAiGJEeG1Z-UhmBP7bw" name="LegacyStyledElement">
+        <modelElement href="ColdIron.uml#_iv1VgCGJEeG1Z-UhmBP7bw"/>
+      </stereotypes>
+      <visibility xmi:id="_i5XsAyGJEeG1Z-UhmBP7bw" label="-"/>
+      <cardinality xmi:id="_i5XsBCGJEeG1Z-UhmBP7bw" label="1" max="1" min="1"/>
+      <type xmi:id="_i5XsBSGJEeG1Z-UhmBP7bw" name="Timer">
+        <modelElement href="ColdIron.uml#_vNXB0B9HEeGqE9nVrqyy7Q"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5y96iRaHEeGIUYJHma8_tg" comments="_jYWmQBqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYWmQRqzEeGUKpicZPvj5Q" name="ServerConnection">
+      <modelElement href="ColdIron.uml#_wtHJQRaHEeGIUYJHma8_tg"/>
+      <keywords xmi:id="_5y96ihaHEeGIUYJHma8_tg" keyword="create"/>
+      <stereotypes xmi:id="_5y96ixaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtHJRRaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96jBaHEeGIUYJHma8_tg" label="+"/>
+      <outParameters xmi:id="_5y96jRaHEeGIUYJHma8_tg">
+        <modelElement href="ColdIron.uml#_wtHJRBaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y96jhaHEeGIUYJHma8_tg" name="ServerConnection">
+          <modelElement href="ColdIron.uml#_wtHJPxaHEeGIUYJHma8_tg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5y96jxaHEeGIUYJHma8_tg" comments="_jYWmRBqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYWmRRqzEeGUKpicZPvj5Q" name="getPlayers">
+      <modelElement href="ColdIron.uml#_wtHJRhaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y96kBaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtHJSBaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96kRaHEeGIUYJHma8_tg" label="+"/>
+      <outParameters xmi:id="_5y96khaHEeGIUYJHma8_tg">
+        <modelElement href="ColdIron.uml#_wtHJRxaHEeGIUYJHma8_tg"/>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5y96lBaHEeGIUYJHma8_tg" comments="_jYWmRhqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYWmRxqzEeGUKpicZPvj5Q" name="getGames">
+      <modelElement href="ColdIron.uml#_wtHJSRaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y96lRaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtHJSxaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96lhaHEeGIUYJHma8_tg" label="+"/>
+      <outParameters xmi:id="_5y96lxaHEeGIUYJHma8_tg">
+        <modelElement href="ColdIron.uml#_wtHJShaHEeGIUYJHma8_tg"/>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5y96mRaHEeGIUYJHma8_tg" comments="_jYWmSBqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYWmSRqzEeGUKpicZPvj5Q" name="getMaps">
+      <modelElement href="ColdIron.uml#_wtHJTBaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y96mhaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtHJThaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96mxaHEeGIUYJHma8_tg" label="+"/>
+      <outParameters xmi:id="_5y96nBaHEeGIUYJHma8_tg">
+        <modelElement href="ColdIron.uml#_wtHJTRaHEeGIUYJHma8_tg"/>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5y96oxaHEeGIUYJHma8_tg" comments="_jYWmShqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYWmSxqzEeGUKpicZPvj5Q" name="msg">
+      <modelElement href="ColdIron.uml#_wtQ6MRaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y96pBaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtQ6MxaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96pRaHEeGIUYJHma8_tg" label="+"/>
+      <parameters xmi:id="_5y96phaHEeGIUYJHma8_tg" name="message">
+        <modelElement href="ColdIron.uml#_wtQ6MhaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y96pxaHEeGIUYJHma8_tg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5y96qBaHEeGIUYJHma8_tg" comments="_jYgXQBqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYgXQRqzEeGUKpicZPvj5Q" name="changePassword">
+      <modelElement href="ColdIron.uml#_wtQ6NBaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y96qRaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtQ6OBaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96qhaHEeGIUYJHma8_tg" label="+"/>
+      <outParameters xmi:id="_5y96qxaHEeGIUYJHma8_tg">
+        <modelElement href="ColdIron.uml#_wtQ6NxaHEeGIUYJHma8_tg"/>
+      </outParameters>
+      <parameters xmi:id="_5y96rRaHEeGIUYJHma8_tg" name="pass1">
+        <modelElement href="ColdIron.uml#_wtQ6NRaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y96rhaHEeGIUYJHma8_tg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5y96rxaHEeGIUYJHma8_tg" name="pass2">
+        <modelElement href="ColdIron.uml#_wtQ6NhaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y96sBaHEeGIUYJHma8_tg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5y96sRaHEeGIUYJHma8_tg" comments="_jYgXQhqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYgXQxqzEeGUKpicZPvj5Q" name="joinGame">
+      <modelElement href="ColdIron.uml#_wtQ6ORaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y96shaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtQ6PBaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96sxaHEeGIUYJHma8_tg" label="+"/>
+      <outParameters xmi:id="_5y96tBaHEeGIUYJHma8_tg">
+        <modelElement href="ColdIron.uml#_wtQ6OxaHEeGIUYJHma8_tg"/>
+      </outParameters>
+      <parameters xmi:id="_5y96thaHEeGIUYJHma8_tg" name="name">
+        <modelElement href="ColdIron.uml#_wtQ6OhaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y96txaHEeGIUYJHma8_tg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5y96uBaHEeGIUYJHma8_tg" comments="_jYgXRBqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYgXRRqzEeGUKpicZPvj5Q" name="createGame">
+      <modelElement href="ColdIron.uml#_wtQ6PRaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y96uRaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtQ6QBaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96uhaHEeGIUYJHma8_tg" label="+"/>
+      <outParameters xmi:id="_5y96uxaHEeGIUYJHma8_tg">
+        <modelElement href="ColdIron.uml#_wtQ6PxaHEeGIUYJHma8_tg"/>
+      </outParameters>
+      <parameters xmi:id="_5y96vRaHEeGIUYJHma8_tg" name="name">
+        <modelElement href="ColdIron.uml#_wtQ6PhaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y96vhaHEeGIUYJHma8_tg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5y96vxaHEeGIUYJHma8_tg" comments="_ZT1rwB3REeGDGvaAm3JhMg" targetConnectionVisual="_ZUImsB3REeGDGvaAm3JhMg" name="login">
+      <modelElement href="ColdIron.uml#_wtQ6QRaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y96wBaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtQ6RRaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96wRaHEeGIUYJHma8_tg" label="+"/>
+      <parameters xmi:id="_5y96xBaHEeGIUYJHma8_tg" name="name">
+        <modelElement href="ColdIron.uml#_wtQ6QhaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y96xRaHEeGIUYJHma8_tg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5y96xhaHEeGIUYJHma8_tg" name="password">
+        <modelElement href="ColdIron.uml#_wtQ6QxaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y96xxaHEeGIUYJHma8_tg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5y96yBaHEeGIUYJHma8_tg" comments="_jYgXSBqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYgXSRqzEeGUKpicZPvj5Q" name="logout">
+      <modelElement href="ColdIron.uml#_wtQ6RhaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y96yRaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtQ6RxaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y96yhaHEeGIUYJHma8_tg" label="+"/>
+    </operations>
+    <operations xmi:id="_5y960BaHEeGIUYJHma8_tg" name="send">
+      <modelElement href="ColdIron.uml#_wtQ6SxaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y960RaHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtQ6TRaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y960haHEeGIUYJHma8_tg" label="-"/>
+      <parameters xmi:id="_5y960xaHEeGIUYJHma8_tg" name="string">
+        <modelElement href="ColdIron.uml#_wtQ6TBaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y961BaHEeGIUYJHma8_tg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5y961RaHEeGIUYJHma8_tg" comments="_jYgXShqzEeGUKpicZPvj5Q" targetConnectionVisual="_jYgXSxqzEeGUKpicZPvj5Q" name="connect">
+      <modelElement href="ColdIron.uml#_wtQ6ThaHEeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_5y961haHEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_wtQ6UBaHEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_5y961xaHEeGIUYJHma8_tg" label="+"/>
+      <outParameters xmi:id="_5y962BaHEeGIUYJHma8_tg">
+        <modelElement href="ColdIron.uml#_wtQ6TxaHEeGIUYJHma8_tg"/>
+        <type xmi:id="_5y962RaHEeGIUYJHma8_tg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_nGisAxaREeGIUYJHma8_tg" comments="_JA0VQRoYEeGxpca4p8NJsg" targetConnectionVisual="_JA0VQhoYEeGxpca4p8NJsg" name="consumeMessage">
+      <modelElement href="ColdIron.uml#_nGisABaREeGIUYJHma8_tg"/>
+      <stereotypes xmi:id="_kB7ZkhaTEeGIUYJHma8_tg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_kBn3kBaTEeGIUYJHma8_tg"/>
+      </stereotypes>
+      <visibility xmi:id="_nGisBRaREeGIUYJHma8_tg" label="+"/>
+      <parameters xmi:id="_nGisBhaREeGIUYJHma8_tg" name="msg">
+        <modelElement href="ColdIron.uml#_nGisARaREeGIUYJHma8_tg"/>
+        <type xmi:id="_nGisBxaREeGIUYJHma8_tg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__9a9sxq9EeGO26CvV7Du0A" comments="__9a9sRq9EeGO26CvV7Du0A" targetConnectionVisual="__9a9shq9EeGO26CvV7Du0A" name="sendNOOP">
+      <modelElement href="ColdIron.uml#__8-RwBq9EeGO26CvV7Du0A"/>
+      <stereotypes xmi:id="__9a9tBq9EeGO26CvV7Du0A" name="StyledElement">
+        <modelElement href="ColdIron.uml#__9ICwBq9EeGO26CvV7Du0A"/>
+      </stereotypes>
+      <visibility xmi:id="__9a9tRq9EeGO26CvV7Du0A" label="+"/>
+    </operations>
+    <operations xmi:id="_ZMP2AB3REeGDGvaAm3JhMg" name="addPropertyChangeListener">
+      <modelElement href="ColdIron.uml#_ZEqARB3REeGDGvaAm3JhMg"/>
+      <stereotypes xmi:id="_ZMP2AR3REeGDGvaAm3JhMg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_ZEqARh3REeGDGvaAm3JhMg"/>
+      </stereotypes>
+      <visibility xmi:id="_ZMP2Ah3REeGDGvaAm3JhMg" label="+"/>
+      <parameters xmi:id="_ZMP2Ax3REeGDGvaAm3JhMg" name="l">
+        <modelElement href="ColdIron.uml#_ZEqARR3REeGDGvaAm3JhMg"/>
+        <type xmi:id="_ZMP2BB3REeGDGvaAm3JhMg" name="PropertyChangeListener">
+          <modelElement href="ColdIron.uml#_ZEqAQh3REeGDGvaAm3JhMg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZMiw8B3REeGDGvaAm3JhMg" name="removePropertyChangeListener">
+      <modelElement href="ColdIron.uml#_ZEqARx3REeGDGvaAm3JhMg"/>
+      <stereotypes xmi:id="_ZMiw8R3REeGDGvaAm3JhMg" name="StyledElement">
+        <modelElement href="ColdIron.uml#_ZEqASR3REeGDGvaAm3JhMg"/>
+      </stereotypes>
+      <visibility xmi:id="_ZMiw8h3REeGDGvaAm3JhMg" label="+"/>
+      <parameters xmi:id="_ZMiw8x3REeGDGvaAm3JhMg" name="l">
+        <modelElement href="ColdIron.uml#_ZEqASB3REeGDGvaAm3JhMg"/>
+        <type xmi:id="_ZMiw9B3REeGDGvaAm3JhMg" name="PropertyChangeListener">
+          <modelElement href="ColdIron.uml#_ZEqAQh3REeGDGvaAm3JhMg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_vOGosR9HEeGqE9nVrqyy7Q" comments="_vN83tx9HEeGqE9nVrqyy7Q" targetConnectionVisual="_vOGosB9HEeGqE9nVrqyy7Q" name="startNOOP">
+      <modelElement href="ColdIron.uml#_vJyJYB9HEeGqE9nVrqyy7Q"/>
+      <stereotypes xmi:id="_vOGosh9HEeGqE9nVrqyy7Q" name="StyledElement">
+        <modelElement href="ColdIron.uml#_vJ76YB9HEeGqE9nVrqyy7Q"/>
+      </stereotypes>
+      <visibility xmi:id="_vOGosx9HEeGqE9nVrqyy7Q" label="+"/>
+    </operations>
+    <operations xmi:id="_vOZjoh9HEeGqE9nVrqyy7Q" comments="_vOZjoB9HEeGqE9nVrqyy7Q" targetConnectionVisual="_vOZjoR9HEeGqE9nVrqyy7Q" name="endNOOP">
+      <modelElement href="ColdIron.uml#_vJyJYR9HEeGqE9nVrqyy7Q"/>
+      <stereotypes xmi:id="_vOZjox9HEeGqE9nVrqyy7Q" name="StyledElement">
+        <modelElement href="ColdIron.uml#_vJ76YR9HEeGqE9nVrqyy7Q"/>
+      </stereotypes>
+      <visibility xmi:id="_vOZjpB9HEeGqE9nVrqyy7Q" label="+"/>
+    </operations>
+    <operations xmi:id="_vOjUoR9HEeGqE9nVrqyy7Q" comments="_vOZjpR9HEeGqE9nVrqyy7Q" targetConnectionVisual="_vOjUoB9HEeGqE9nVrqyy7Q" name="startUpdate">
+      <modelElement href="ColdIron.uml#_vJyJYh9HEeGqE9nVrqyy7Q"/>
+      <stereotypes xmi:id="_vOjUoh9HEeGqE9nVrqyy7Q" name="StyledElement">
+        <modelElement href="ColdIron.uml#_vJ76Yh9HEeGqE9nVrqyy7Q"/>
+      </stereotypes>
+      <visibility xmi:id="_vOjUox9HEeGqE9nVrqyy7Q" label="+"/>
+    </operations>
+    <operations xmi:id="_vOsekR9HEeGqE9nVrqyy7Q" comments="_vOjUpB9HEeGqE9nVrqyy7Q" targetConnectionVisual="_vOsekB9HEeGqE9nVrqyy7Q" name="endUpdate">
+      <modelElement href="ColdIron.uml#_vJyJYx9HEeGqE9nVrqyy7Q"/>
+      <stereotypes xmi:id="_vOsekh9HEeGqE9nVrqyy7Q" name="StyledElement">
+        <modelElement href="ColdIron.uml#_vJ76Yx9HEeGqE9nVrqyy7Q"/>
+      </stereotypes>
+      <visibility xmi:id="_vOsekx9HEeGqE9nVrqyy7Q" label="+"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

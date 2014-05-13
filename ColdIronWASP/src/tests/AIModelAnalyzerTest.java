@@ -1,0 +1,373 @@
+package tests;
+
+import java.util.ArrayList;
+
+import junit.framework.Assert;
+
+import model.game.Archer;
+import model.game.Barrack;
+import model.game.CIClient;
+import model.game.Catapult;
+import model.game.Forge;
+import model.game.Game;
+import model.game.Knight;
+import model.game.Map;
+import model.game.Peon;
+import model.game.Resource;
+import model.game.Sector;
+import model.game.Stronghold;
+import model.game.Swordsman;
+import model.game.Tower;
+import model.game.User;
+import model.game.UserAssets;
+
+import org.junit.Test;
+
+import ai.helper.AiModelAnalyzer;
+import ai.helper.UserAssetsCounter;
+
+public class AIModelAnalyzerTest {
+	
+	CIClient ciClient = new CIClient();
+	Game game = new Game();
+	Map map = new Map();
+	Sector sector1 = new Sector();
+	Sector sector2 = new Sector();
+	Sector sector3 = new Sector();
+	Sector sector4 = new Sector();
+	User user1 = new User();
+	User user2 = new User();
+	UserAssets userAssets1 = new UserAssets();
+	UserAssets userAssets2 = new UserAssets();
+	Resource resource1 = new Resource();
+	Resource resource2 = new Resource();
+	Resource resource3 = new Resource();
+	Resource resource4 = new Resource();
+	Resource resource5 = new Resource();
+	Resource resource6 = new Resource();
+	Resource resource7 = new Resource();
+	Resource resource8 = new Resource();
+	Stronghold stronghold1 = new Stronghold();
+	Stronghold stronghold2 = new Stronghold();
+	Stronghold stronghold3 = new Stronghold();
+	Stronghold stronghold4 = new Stronghold();
+	Barrack barrack1 = new Barrack();
+	Barrack barrack2 = new Barrack();
+	Barrack barrack3 = new Barrack();
+	Barrack barrack4 = new Barrack();
+	Forge forge1 = new Forge();
+	Forge forge2 = new Forge();
+	Forge forge3 = new Forge();
+	Forge forge4 = new Forge();
+	Tower tower1 = new Tower();
+	Tower tower2 = new Tower();
+	Tower tower3 = new Tower();
+	Tower tower4 = new Tower();
+	Peon peon1 = new Peon();
+	Peon peon2 = new Peon();
+	Peon peon3 = new Peon();
+	Peon peon4 = new Peon();
+	Swordsman swordsman1 = new Swordsman();
+	Swordsman swordsman2 = new Swordsman();
+	Swordsman swordsman3 = new Swordsman();
+	Swordsman swordsman4 = new Swordsman();
+	Archer archer1 = new Archer();
+	Archer archer2 = new Archer();
+	Archer archer3 = new Archer();
+	Archer archer4 = new Archer();
+	Knight knight1 = new Knight();
+	Knight knight2 = new Knight();
+	Knight knight3 = new Knight();
+	Knight knight4 = new Knight();
+	Catapult catapult1 = new Catapult();
+	Catapult catapult2 = new Catapult();
+	Catapult catapult3 = new Catapult();
+	Catapult catapult4 = new Catapult();
+	AiModelAnalyzer aiModelAnalyzer = new AiModelAnalyzer(ciClient);
+	UserAssetsCounter myUserAssetsCounter = null;
+	ArrayList<UserAssetsCounter> opponentsUserAssetsCounter = null;
+
+	@Test
+	public void testAiModelAnalyzerInit(){
+		
+		// init game
+		init();
+		
+		// perform action
+		aiModelAnalyzer.initValues();
+		myUserAssetsCounter = aiModelAnalyzer.getMyUserAssetsCounter();
+		opponentsUserAssetsCounter = aiModelAnalyzer.getOpponentsUserAssetsCounter();
+		
+		// check if action was done right
+		int myBuildings = myUserAssetsCounter.getAllBuildingsCount();
+		Assert.assertEquals("My buildings count is wrong", 4, myBuildings);
+		int myUnits = myUserAssetsCounter.getAllUnitsCount();
+		Assert.assertEquals("My units count is wrong", 5, myUnits);
+		int myWoodResources = myUserAssetsCounter.getWoodResourcesCount();
+		Assert.assertEquals("My wood count is wrong", 2000, myWoodResources);
+		int myStoneResources = myUserAssetsCounter.getStoneResourcesCount();
+		Assert.assertEquals("My stone count is wrong", 2000, myStoneResources);
+		int myIronResources = myUserAssetsCounter.getIronResourcesCount();
+		Assert.assertEquals("My iron count is wrong", 2000, myIronResources);
+		int myStrongholdsLvl1 = myUserAssetsCounter.getStrongholdLevel1Count();
+		Assert.assertEquals("My strongholds lvl1 count is wrong", 1, myStrongholdsLvl1);
+		int myBarracksLvl1 = myUserAssetsCounter.getBarrackLevel1Count();
+		Assert.assertEquals("My barracks lvl1 count is wrong", 1, myBarracksLvl1);
+		int myTowersLvl1 = myUserAssetsCounter.getTowerLevel1Count();
+		Assert.assertEquals("My towers lvl1 count is wrong", 1, myTowersLvl1);
+		int myForges = myUserAssetsCounter.getForgeCount();
+		Assert.assertEquals("My forges count is wrong", 1, myForges);
+		int myPeons = myUserAssetsCounter.getPeonCount();
+		Assert.assertEquals("My peon count is wrong", 1, myPeons);
+		int myArchersLvl1 = myUserAssetsCounter.getArcherLevel1Count();
+		Assert.assertEquals("My archers lvl1 count is wrong", 1, myArchersLvl1);
+		int mySwordsmanLvl1 = myUserAssetsCounter.getSwordsmanLevel1Count();
+		Assert.assertEquals("My swordsman lvl1 count is wrong", 1, mySwordsmanLvl1);
+		int myKnightsLvl1 = myUserAssetsCounter.getKnightLevel1Count();
+		Assert.assertEquals("My knights lvl1 count is wrong", 1, myKnightsLvl1);
+		int myCatapult = myUserAssetsCounter.getCatapultCount();
+		Assert.assertEquals("My catapult count is wrong", 1, myCatapult);		
+
+		int opponentsBuildings = opponentsUserAssetsCounter.get(0).getAllBuildingsCount();
+		Assert.assertEquals("Opponents buildings count is wrong", 4, opponentsBuildings);
+		int opponentsUnits = opponentsUserAssetsCounter.get(0).getAllUnitsCount();
+		Assert.assertEquals("Opponents units count is wrong", 5, opponentsUnits);
+		int opponentsWoodResources = opponentsUserAssetsCounter.get(0).getWoodResourcesCount();
+		Assert.assertEquals("Opponents wood count is wrong", 2000, opponentsWoodResources);
+		int opponentsStoneResources = opponentsUserAssetsCounter.get(0).getStoneResourcesCount();
+		Assert.assertEquals("Opponents stone count is wrong", 2000, opponentsStoneResources);
+		int opponentsIronResources = opponentsUserAssetsCounter.get(0).getIronResourcesCount();
+		Assert.assertEquals("Opponents iron count is wrong", 2000, opponentsIronResources);
+		int opponentsStrongholdsLvl1 = opponentsUserAssetsCounter.get(0).getStrongholdLevel1Count();
+		Assert.assertEquals("Opponents strongholds lvl1 count is wrong", 1, opponentsStrongholdsLvl1);
+		int opponentsBarracksLvl1 = opponentsUserAssetsCounter.get(0).getBarrackLevel1Count();
+		Assert.assertEquals("Opponents barracks lvl1 count is wrong", 1, opponentsBarracksLvl1);
+		int opponentsTowersLvl1 = opponentsUserAssetsCounter.get(0).getTowerLevel1Count();
+		Assert.assertEquals("Opponents towers lvl1 count is wrong", 1, opponentsTowersLvl1);
+		int opponentsForges = opponentsUserAssetsCounter.get(0).getForgeCount();
+		Assert.assertEquals("Opponents forges count is wrong", 1, opponentsForges);
+		int opponentsPeons = opponentsUserAssetsCounter.get(0).getPeonCount();
+		Assert.assertEquals("Opponents peon count is wrong", 1, opponentsPeons);
+		int opponentsArchersLvl1 = opponentsUserAssetsCounter.get(0).getArcherLevel1Count();
+		Assert.assertEquals("Opponents archers lvl1 count is wrong", 1, opponentsArchersLvl1);
+		int opponentsSwordsmanLvl1 = opponentsUserAssetsCounter.get(0).getSwordsmanLevel1Count();
+		Assert.assertEquals("Opponents swordsman lvl1 count is wrong", 1, opponentsSwordsmanLvl1);
+		int opponentsKnightsLvl1 = opponentsUserAssetsCounter.get(0).getKnightLevel1Count();
+		Assert.assertEquals("Opponents knights lvl1 count is wrong", 1, opponentsKnightsLvl1);
+		int opponentsCatapult = opponentsUserAssetsCounter.get(0).getCatapultCount();
+		Assert.assertEquals("Opponents catapult count is wrong", 1, opponentsCatapult);
+	}
+	
+	@Test
+	public void testAiModelAnalyzerChange(){
+		
+		// init game
+		init();
+		aiModelAnalyzer.initValues();
+		
+		// perform action
+		game.addToSectorElement(stronghold3);
+		game.addToSectorElement(stronghold4);
+		stronghold3.setLevel(2);
+		stronghold4.setLevel(2);
+		stronghold3.setSector(sector1);
+		stronghold4.setSector(sector2);
+		userAssets1.addToBuildings(stronghold3);
+		userAssets2.addToBuildings(stronghold4);
+		aiModelAnalyzer.initValues();
+		myUserAssetsCounter = aiModelAnalyzer.getMyUserAssetsCounter();
+		opponentsUserAssetsCounter = aiModelAnalyzer.getOpponentsUserAssetsCounter();		
+		
+		// check if action was done right
+		int myBuildings = myUserAssetsCounter.getAllBuildingsCount();
+		Assert.assertEquals("My buildings count is wrong", 5, myBuildings);
+		int myUnits = myUserAssetsCounter.getAllUnitsCount();
+		Assert.assertEquals("My units count is wrong", 5, myUnits);
+		int myWoodResources = myUserAssetsCounter.getWoodResourcesCount();
+		Assert.assertEquals("My wood count is wrong", 2000, myWoodResources);
+		int myStoneResources = myUserAssetsCounter.getStoneResourcesCount();
+		Assert.assertEquals("My stone count is wrong", 2000, myStoneResources);
+		int myIronResources = myUserAssetsCounter.getIronResourcesCount();
+		Assert.assertEquals("My iron count is wrong", 2000, myIronResources);
+		int myStrongholdsLvl1 = myUserAssetsCounter.getStrongholdLevel1Count();
+		Assert.assertEquals("My strongholds lvl1 count is wrong", 1, myStrongholdsLvl1);
+		int myStrongholdsLvl2 = myUserAssetsCounter.getStrongholdLevel2Count();
+		Assert.assertEquals("My strongholds lvl2 count is wrong", 1, myStrongholdsLvl2);
+		int myBarracksLvl1 = myUserAssetsCounter.getBarrackLevel1Count();
+		Assert.assertEquals("My barracks lvl1 count is wrong", 1, myBarracksLvl1);
+		int myTowersLvl1 = myUserAssetsCounter.getTowerLevel1Count();
+		Assert.assertEquals("My towers lvl1 count is wrong", 1, myTowersLvl1);
+		int myForges = myUserAssetsCounter.getForgeCount();
+		Assert.assertEquals("My forges count is wrong", 1, myForges);
+		int myPeons = myUserAssetsCounter.getPeonCount();
+		Assert.assertEquals("My peon count is wrong", 1, myPeons);
+		int myArchersLvl1 = myUserAssetsCounter.getArcherLevel1Count();
+		Assert.assertEquals("My archers lvl1 count is wrong", 1, myArchersLvl1);
+		int mySwordsmanLvl1 = myUserAssetsCounter.getSwordsmanLevel1Count();
+		Assert.assertEquals("My swordsman lvl1 count is wrong", 1, mySwordsmanLvl1);
+		int myKnightsLvl1 = myUserAssetsCounter.getKnightLevel1Count();
+		Assert.assertEquals("My knights lvl1 count is wrong", 1, myKnightsLvl1);
+		int myCatapult = myUserAssetsCounter.getCatapultCount();
+		Assert.assertEquals("My catapult count is wrong", 1, myCatapult);		
+
+		int opponentsBuildings = opponentsUserAssetsCounter.get(0).getAllBuildingsCount();
+		Assert.assertEquals("Opponents buildings count is wrong", 5, opponentsBuildings);
+		int opponentsUnits = opponentsUserAssetsCounter.get(0).getAllUnitsCount();
+		Assert.assertEquals("Opponents units count is wrong", 5, opponentsUnits);
+		int opponentsWoodResources = opponentsUserAssetsCounter.get(0).getWoodResourcesCount();
+		Assert.assertEquals("Opponents wood count is wrong", 2000, opponentsWoodResources);
+		int opponentsStoneResources = opponentsUserAssetsCounter.get(0).getStoneResourcesCount();
+		Assert.assertEquals("Opponents stone count is wrong", 2000, opponentsStoneResources);
+		int opponentsIronResources = opponentsUserAssetsCounter.get(0).getIronResourcesCount();
+		Assert.assertEquals("Opponents iron count is wrong", 2000, opponentsIronResources);
+		int opponentsStrongholdsLvl1 = opponentsUserAssetsCounter.get(0).getStrongholdLevel1Count();
+		Assert.assertEquals("Opponents strongholds lvl1 count is wrong", 1, opponentsStrongholdsLvl1);
+		int opponentsStrongholdsLvl2 = opponentsUserAssetsCounter.get(0).getStrongholdLevel2Count();
+		Assert.assertEquals("Opponents strongholds lvl2 count is wrong", 1, opponentsStrongholdsLvl2);
+		int opponentsBarracksLvl1 = opponentsUserAssetsCounter.get(0).getBarrackLevel1Count();
+		Assert.assertEquals("Opponents barracks lvl1 count is wrong", 1, opponentsBarracksLvl1);
+		int opponentsTowersLvl1 = opponentsUserAssetsCounter.get(0).getTowerLevel1Count();
+		Assert.assertEquals("Opponents towers lvl1 count is wrong", 1, opponentsTowersLvl1);
+		int opponentsForges = opponentsUserAssetsCounter.get(0).getForgeCount();
+		Assert.assertEquals("Opponents forges count is wrong", 1, opponentsForges);
+		int opponentsPeons = opponentsUserAssetsCounter.get(0).getPeonCount();
+		Assert.assertEquals("Opponents peon count is wrong", 1, opponentsPeons);
+		int opponentsArchersLvl1 = opponentsUserAssetsCounter.get(0).getArcherLevel1Count();
+		Assert.assertEquals("Opponents archers lvl1 count is wrong", 1, opponentsArchersLvl1);
+		int opponentsSwordsmanLvl1 = opponentsUserAssetsCounter.get(0).getSwordsmanLevel1Count();
+		Assert.assertEquals("Opponents swordsman lvl1 count is wrong", 1, opponentsSwordsmanLvl1);
+		int opponentsKnightsLvl1 = opponentsUserAssetsCounter.get(0).getKnightLevel1Count();
+		Assert.assertEquals("Opponents knights lvl1 count is wrong", 1, opponentsKnightsLvl1);
+		int opponentsCatapult = opponentsUserAssetsCounter.get(0).getCatapultCount();
+		Assert.assertEquals("Opponents catapult count is wrong", 1, opponentsCatapult);
+	}
+	
+	public void init(){
+		
+		// Initializing when game starts
+		ciClient.setGame(game);
+		game.setMap(map);
+		game.addToUser(user1);
+		game.addToUser(user2);
+		game.addToUserAssets(userAssets1);
+		game.addToUserAssets(userAssets2);
+		game.addToSectorElement(stronghold1);
+		game.addToSectorElement(stronghold2);
+		game.addToSectorElement(barrack1);
+		game.addToSectorElement(barrack2);
+		game.addToSectorElement(forge1);
+		game.addToSectorElement(forge2);
+		game.addToSectorElement(tower1);
+		game.addToSectorElement(tower2);
+		game.addToSectorElement(peon1);
+		game.addToSectorElement(peon2);
+		game.addToSectorElement(swordsman1);
+		game.addToSectorElement(swordsman2);
+		game.addToSectorElement(knight1);
+		game.addToSectorElement(knight2);
+		game.addToSectorElement(archer1);
+		game.addToSectorElement(archer2);
+		game.addToSectorElement(catapult1);
+		game.addToSectorElement(catapult2);
+		game.addToSectorElement(resource1);
+		game.addToSectorElement(resource2);
+		game.addToSectorElement(resource3);
+		game.addToSectorElement(resource4);
+		game.addToSectorElement(resource5);
+		game.addToSectorElement(resource6);
+		map.addToSector(sector1);
+		map.addToSector(sector2);
+		map.addToSector(sector3);
+		map.addToSector(sector4);
+		user1.setUserAssets(userAssets1);
+		user2.setUserAssets(userAssets2);
+		user1.setId("abc@user");
+		user2.setId("def@user");
+		user1.setStartUser(true);
+		user2.setStartUser(false);
+		user1.setNickname("waldo");
+		user2.setNickname("hans");
+		userAssets1.setId("abc@userAssets");
+		userAssets2.setId("def@userAssets");
+		stronghold1.setLevel(1);
+		stronghold2.setLevel(1);
+		stronghold1.setSector(sector1);
+		stronghold2.setSector(sector2);
+		barrack1.setLevel(1);
+		barrack2.setLevel(1);
+		barrack1.setSector(sector1);
+		barrack2.setSector(sector2);
+		forge1.setLevel(1);
+		forge2.setLevel(1);
+		forge1.setSector(sector1);
+		forge2.setSector(sector2);
+		tower1.setLevel(1);
+		tower2.setLevel(1);
+		tower1.setSector(sector1);
+		tower2.setSector(sector2);
+		peon1.setLevel(1);
+		peon2.setLevel(1);
+		peon1.setSector(sector1);
+		peon2.setSector(sector2);
+		swordsman1.setLevel(1);
+		swordsman2.setLevel(1);
+		swordsman1.setSector(sector1);
+		swordsman2.setSector(sector2);
+		knight1.setLevel(1);
+		knight2.setLevel(1);
+		knight1.setSector(sector1);
+		knight2.setSector(sector2);
+		archer1.setLevel(1);
+		archer2.setLevel(1);
+		archer1.setSector(sector1);
+		archer2.setSector(sector2);
+		catapult1.setLevel(1);
+		catapult2.setLevel(1);
+		catapult1.setSector(sector1);
+		catapult2.setSector(sector2);
+		resource1.setQuantity("2000");
+		resource1.setType("WOOD");
+		resource1.setSector(sector1);
+		resource3.setQuantity("2000");
+		resource3.setType("IRON");
+		resource3.setSector(sector1);
+		resource5.setQuantity("2000");
+		resource5.setType("STONE");
+		resource5.setSector(sector1);
+		resource2.setQuantity("2000");
+		resource2.setType("WOOD");
+		resource2.setSector(sector2);
+		resource4.setQuantity("2000");
+		resource4.setType("IRON");
+		resource4.setSector(sector2);
+		resource6.setQuantity("2000");
+		resource6.setType("STONE");
+		resource6.setSector(sector2);
+		userAssets1.addToSector(sector1);
+		userAssets2.addToSector(sector2);
+		userAssets1.addToUnits(peon1);
+		userAssets1.addToUnits(swordsman1);
+		userAssets1.addToUnits(knight1);
+		userAssets1.addToUnits(archer1);
+		userAssets1.addToUnits(catapult1);
+		userAssets2.addToUnits(peon2);
+		userAssets2.addToUnits(swordsman2);
+		userAssets2.addToUnits(knight2);
+		userAssets2.addToUnits(archer2);
+		userAssets2.addToUnits(catapult2);
+		userAssets1.addToBuildings(stronghold1);
+		userAssets1.addToBuildings(barrack1);
+		userAssets1.addToBuildings(forge1);
+		userAssets1.addToBuildings(tower1);
+		userAssets2.addToBuildings(stronghold2);
+		userAssets2.addToBuildings(barrack2);
+		userAssets2.addToBuildings(forge2);
+		userAssets2.addToBuildings(tower2);
+		userAssets1.addToCollectedResources(resource1);
+		userAssets1.addToCollectedResources(resource3);
+		userAssets1.addToCollectedResources(resource5);
+		userAssets2.addToCollectedResources(resource2);
+		userAssets2.addToCollectedResources(resource4);
+		userAssets2.addToCollectedResources(resource6);	
+	}
+}

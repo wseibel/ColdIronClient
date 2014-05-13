@@ -1,0 +1,308 @@
+package ai.controlCenter;
+
+import java.util.ArrayList;
+
+import ai.helper.AIHelper;
+import ai.helper.AiModelAnalyzer;
+import ai.helper.UserAssetsCounter;
+import model.ai.UnitBuilder;
+import model.game.CIClient;
+
+/**
+ * CreateUnits decides whether an unit should be created and if necessary which
+ * unit (so far without considering information about opponents)
+ * 
+ */
+public class CreateUnits {
+
+	// The AI's strategy is manipulated by these values
+	private static final int PEON_LIMIT = 5;
+	private static final int PEON_PRIORITY_LIMIT = 8; // counts the other way
+														// round!!
+	private static final int WOOD_LIMIT = 200000;
+	private static final int STONE_LIMIT = 200000;
+	private static final int IRON_LIMIT = 200000;
+	private static final int UNIT_LIMIT = 70;
+
+	private int peonPriority = 0;
+	private int archerLvl1Priority = 0;
+	private int archerLvl2Priority = 0;
+	private int archerLvl3Priority = 0;
+	private int knightLvl1Priority = 0;
+	private int knightLvl2Priority = 0;
+	private int knightLvl3Priority = 0;
+	private int swordsmanLvl1Priority = 0;
+	private int swordsmanLvl2Priority = 0;
+	private int swordsmanLvl3Priority = 0;
+	private int catapultLvl1Priority = 0;
+
+	private CIClient ciClient = null;
+	private AIHelper aiHelper = null;
+	private AiModelAnalyzer aiModel = null;
+	private String myUserAssetsID = null;
+	private UserAssetsCounter myUserAssetsCounter = null;
+	private ArrayList<UserAssetsCounter> opponentsUserAssetsCounter = null;
+	private long timeOfLastOrder = System.currentTimeMillis();
+
+	public CreateUnits(CIClient ciClient, AIHelper aiHelper,
+			AiModelAnalyzer aiModel) {
+		this.ciClient = ciClient;
+		this.aiHelper = aiHelper;
+		this.aiModel = aiModel;
+		this.myUserAssetsID = this.aiModel.getMyUserAssetsCounter().getId();
+	}
+
+	/**
+	 * this method decide whether units should be created and if necessary which
+	 * unit
+	 * 
+	 * @param mainAi
+	 *            --> main ai class
+	 */
+	public void decideCreateUnits(AIMain aiMain) {
+		aiModel.refreshHitUnitCounter();
+		aiModel.initValues();
+		myUserAssetsCounter = aiModel.getMyUserAssetsCounter();
+		opponentsUserAssetsCounter = aiModel.getOpponentsUserAssetsCounter();
+		UnitBuilder unitBuilder = new UnitBuilder(aiHelper, aiModel,
+				myUserAssetsID, ciClient.getChainMaster().getCommandHelper());
+
+		aiMain.combatUnitsPriority = false;
+		aiMain.level2Priority = false;
+		aiMain.level3Priority = false;
+
+		try {
+			// Check if there is a possibility to build a unit
+			if (myUserAssetsCounter.getAllUnitsCount() == UNIT_LIMIT
+					|| aiMain.needFarm)
+				return;
+
+			// Build peon?
+			if (aiMain.buildPeonPriority == 10) {
+				// // determine peon priority
+				// peonPriority = aiMain.buildPeonPriority
+				// - myUserAssetsCounter.getPeonCount()
+				// + (myUserAssetsCounter.getSeriouslyHitPeonCount() / 2);
+
+				// if (peonPriority >= PEON_PRIORITY_LIMIT) {
+				// // if it was possible to build a peon, stop unit creation
+				// here
+				if (unitBuilder.buildPeon_lvl1()){
+					aiMain.buildPeonPriority = 0;
+					return;
+				}
+			}
+//			if (myUserAssetsCounter.getPeonCount() <= PEON_LIMIT) {
+//				// // if it was possible to build a peon, stop unit creation
+//				// here
+//				if (unitBuilder.buildPeon_lvl1()) {
+//					aiMain.buildPeonPriority = 0;
+//					return;
+//				}
+//			}
+		} catch (Exception e) {
+			System.err
+					.println("Unable to calculate the need for creating peon");
+		}
+
+		// Build combat units?
+		try {
+			// If best combat unit has already been calculated, build those
+			// units until the recommended amount has reached
+			if (archerLvl1Priority > 0) {
+				unitBuilder.buildArcher_lvl1();
+				archerLvl1Priority--;
+				return;
+			} else if (archerLvl2Priority > 0) {
+				unitBuilder.buildArcher_lvl2();
+				archerLvl2Priority--;
+				return;
+			} else if (archerLvl3Priority > 0) {
+				unitBuilder.buildArcher_lvl3();
+				archerLvl3Priority--;
+				return;
+			}
+
+			if (knightLvl1Priority > 0) {
+				unitBuilder.buildKnight_lvl1();
+				knightLvl1Priority--;
+				return;
+			} else if (knightLvl2Priority > 0) {
+				unitBuilder.buildKnight_lvl2();
+				knightLvl2Priority--;
+				return;
+			} else if (knightLvl3Priority > 0) {
+				unitBuilder.buildKnight_lvl3();
+				knightLvl3Priority--;
+				return;
+			}
+
+			if (swordsmanLvl1Priority > 0) {
+				unitBuilder.buildSwordsman_lvl1();
+				swordsmanLvl1Priority--;
+				return;
+			} else if (swordsmanLvl2Priority > 0) {
+				unitBuilder.buildSwordsman_lvl2();
+				swordsmanLvl2Priority--;
+				return;
+			} else if (swordsmanLvl3Priority > 0) {
+				unitBuilder.buildSwordsman_lvl3();
+				swordsmanLvl3Priority--;
+				return;
+			}
+
+			if (catapultLvl1Priority > 0) {
+				unitBuilder.buildCatapult_lvl1();
+				catapultLvl1Priority--;
+				return;
+			}
+
+			// Calculate the best unit in the current situation and the amount
+			// of that unit
+			int wood = myUserAssetsCounter.getWoodResourcesCount() < WOOD_LIMIT ? myUserAssetsCounter
+					.getWoodResourcesCount() : WOOD_LIMIT;
+			int stone = myUserAssetsCounter.getStoneResourcesCount() < STONE_LIMIT ? myUserAssetsCounter
+					.getStoneResourcesCount() : STONE_LIMIT;
+			int iron = myUserAssetsCounter.getIronResourcesCount() < IRON_LIMIT ? myUserAssetsCounter
+					.getIronResourcesCount() : IRON_LIMIT;
+			int unitCount = myUserAssetsCounter.getAllUnitsCount() < UNIT_LIMIT ? myUserAssetsCounter
+					.getAllUnitsCount() : UNIT_LIMIT;
+
+			// Get recommended unit type, level and amount
+			String unitRecommendation = aiHelper.getBestUnitType(wood, stone,
+					iron, unitCount);
+			String[] unitRecommendationValues = unitRecommendation.split(":");
+			String recommendedUnitType = unitRecommendationValues[0];
+			// If it is impossible to build a unit, stop here
+			if (recommendedUnitType.equals("noUnitPossible")) {
+				return;
+			}
+			Integer recommendedUnitLevel = Integer
+					.valueOf(unitRecommendationValues[1]);
+			Integer recommendedUnitAmount = Integer
+					.valueOf(unitRecommendationValues[2]);
+
+			aiMain.combatUnitsPriority = true;
+
+			switch (recommendedUnitLevel) {
+			// Level 1
+			case 1:
+				if (myUserAssetsCounter.getBarrackLevel1Count() == 0) {
+					aiMain.combatUnitsPriority = true;
+					return;
+				}
+				if (recommendedUnitType.equals("Archer")) {
+					archerLvl1Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getArcherLevel1Count()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitArcherLevel1Count() / 2);
+					unitBuilder.buildArcher_lvl1();
+					archerLvl1Priority--;
+					return;
+				} else if (recommendedUnitType.equals("Knight")) {
+					knightLvl1Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getKnightLevel1Count()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitKnightLevel1Count() / 2);
+					unitBuilder.buildKnight_lvl1();
+					knightLvl1Priority--;
+					return;
+
+				} else if (recommendedUnitType.equals("Swordsman")) {
+					swordsmanLvl1Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getSwordsmanLevel1Count()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitSwordsmanLevel1Count() / 2);
+					unitBuilder.buildSwordsman_lvl1();
+					swordsmanLvl1Priority--;
+					return;
+
+				} else if (recommendedUnitType.equals("Catapult")) {
+					catapultLvl1Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getCatapultCount()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitCatapultCount() / 2);
+					if (myUserAssetsCounter.getForgeCount() == 0) {
+						aiMain.catapultPriority = true;
+					}
+					unitBuilder.buildCatapult_lvl1();
+					catapultLvl1Priority--;
+					return;
+				}
+				break;
+			// Level 2
+			case 2:
+				if (myUserAssetsCounter.getBarrackLevel2Count() == 0) {
+					aiMain.level2Priority = true;
+					return;
+				}
+				if (recommendedUnitType.equals("Archer")) {
+					archerLvl2Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getArcherLevel2Count()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitArcherLevel2Count() / 2);
+					unitBuilder.buildArcher_lvl2();
+					archerLvl2Priority--;
+					return;
+
+				} else if (recommendedUnitType.equals("Knight")) {
+					knightLvl2Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getKnightLevel2Count()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitKnightLevel2Count() / 2);
+					unitBuilder.buildKnight_lvl2();
+					knightLvl2Priority--;
+					return;
+
+				} else if (recommendedUnitType.equals("Swordsman")) {
+					swordsmanLvl2Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getSwordsmanLevel2Count()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitSwordsmanLevel2Count() / 2);
+					unitBuilder.buildSwordsman_lvl2();
+					swordsmanLvl2Priority--;
+					return;
+				}
+				break;
+			// Level 3
+			case 3:
+				if (myUserAssetsCounter.getBarrackLevel3Count() == 0) {
+					aiMain.level3Priority = true;
+					return;
+				}
+				if (recommendedUnitType.equals("Archer")) {
+					archerLvl3Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getArcherLevel3Count()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitArcherLevel3Count() / 2);
+					unitBuilder.buildArcher_lvl3();
+					archerLvl3Priority--;
+					return;
+				} else if (recommendedUnitType.equals("Knight")) {
+					knightLvl3Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getKnightLevel3Count()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitKnightLevel3Count() / 2);
+					unitBuilder.buildKnight_lvl3();
+					knightLvl3Priority--;
+					return;
+				} else if (recommendedUnitType.equals("Swordsman")) {
+					swordsmanLvl3Priority = recommendedUnitAmount
+							- myUserAssetsCounter.getSwordsmanLevel3Count()
+							+ (myUserAssetsCounter
+									.getSeriouslyHitSwordsmanLevel3Count() / 2);
+					unitBuilder.buildSwordsman_lvl3();
+					swordsmanLvl3Priority--;
+					return;
+				}
+				break;
+			}
+
+		} catch (Exception e) {
+			System.err
+					.println("Unable to calculate which unit supposed to be built");
+			System.err.println(" " + e.getMessage() + " ");
+			e.printStackTrace();
+		}
+	}
+}

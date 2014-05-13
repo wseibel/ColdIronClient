@@ -1,0 +1,31 @@
+10
+
+dir
+756
+svn+ssh://s_a8wunm@scm.gforge.cs.uni-kassel.de/var/lib/gforge/chroot/scmrepos/svn/se1ws1112teama/ColdIronWASP/src/org/eclipse/wb
+svn+ssh://s_a8wunm@scm.gforge.cs.uni-kassel.de/var/lib/gforge/chroot/scmrepos/svn/se1ws1112teama
+
+
+
+2011-12-12T10:16:42.470528Z
+248
+jbeneke
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+765d9e18-2c09-460f-a6b5-3381d824d4a8
+
+swt
+dir
+
